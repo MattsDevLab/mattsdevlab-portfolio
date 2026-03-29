@@ -14,18 +14,19 @@ export default function Header(){
                 <Link href="/" className="site-header__logo">
                     Matt<span className="site-header__logo-accent">sDevLab</span>    
                 </Link>
+                <nav aria-label="Primary" className="site-header__nav">
+                    <ul className="site-header__menu">
+                        {navItems.map((item) => (
+                            <li key={item.href} className="site-header__menu-item">
+                                <Link href={item.href} className="site-header__menu-link">
+                                    {item.label}
+                                </Link>
+                            </li>
+                        ))}
+                    </ul>
+                </nav>
             </div>
-            <nav aria-label="Primary" className="site-header__nav">
-                <ul className="site-header__menu">
-                    {navItems.map((item) => (
-                        <li key={item.href} className="site-header__menu-item">
-                            <Link href={item.href} className="site-header__menu-link">
-                                {item.label}
-                            </Link>
-                        </li>
-                    ))}
-                </ul>
-            </nav>
+          
         </header>
     )
 }
