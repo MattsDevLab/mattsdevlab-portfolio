@@ -18,6 +18,8 @@ export default function WorkPage() {
                             summary={project.summary}
                             tags={project.tags}
                             href={project.href}
+                            slug={project.slug}
+                            featured={project.featured}
                         />
                     ))}
                 </div>
