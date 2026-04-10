@@ -1,23 +1,24 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import { Space_Grotesk, Manrope } from "next/font/google";
+import "./sass/main.scss";
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const spaceGrotesk = Space_Grotesk({
+  subsets: ['latin'],
+  variable: '--font-display',
+  weight: ['300', '400', '500', '600', '700'],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const manrope = Manrope({
+  subsets: ['latin'],
+  variable: '--font-body',
+  weight: ['300', '400', '500', '600', '700'],
 });
 
 export const metadata: Metadata = {
-  title: "MattsDevLab",
-  description: "Portfolio of Matthew Bagley, frontend developer specialising in accessibility and scalable UI development.",
+  title: 'MattsDevLab',
+  description: 'Senior Frontend Engineer & Accessibility Specialist',
   icons: {
     icon: '/favicon.svg',
   },
@@ -29,8 +30,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+    <html lang="en" className={`${spaceGrotesk.variable} ${manrope.variable}`}>
+      <body>
+        <a href="#main-content" className="skip-link">
+          Skip to main content
+        </a>
         <Header />
         <main id="main-content">{children}</main>
         <Footer />
