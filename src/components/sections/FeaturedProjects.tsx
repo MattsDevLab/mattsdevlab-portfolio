@@ -9,9 +9,9 @@ export default function FeaturedProjects() {
     <section className="featured-projects">
       <div className="featured-projects__inner">
         <p className="section-label">Selected Work</p>
-        <h2 className="section-title">Featured projects</h2>
+        <h2 className="section-title">Frontend and accessibility-focused projects</h2>
         <p className="section-text">
-          A selection of frontend and accessibility-focused work across custom website builds.
+            A selection of projects focused on accessibility, performance, and scalable frontend development across custom website builds.
         </p>
 
         <div className="featured-projects__grid">

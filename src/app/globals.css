@@ -261,3 +261,48 @@ main {
   width: min(100% - 2rem, 1200px);
   margin-inline: auto;
 }
+/* Project Single */
+
+.project-page__inner{
+    width: min(100% - 2rem, 1200px);
+    margin-inline: auto;
+}
+
+/* About page */
+
+.about-page {
+  padding: 4rem 0;
+}
+
+.about-page__inner {
+  width: min(100% - 2rem, 1200px);
+  margin-inline: auto;
+  max-width: 800px;
+}
+
+.about-page__header {
+  margin-bottom: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.about-page__lead {
+  font-size: 1.25rem;
+  max-width: 65ch;
+  margin: 0;
+}
+
+.about-page__section {
+  margin-bottom: 3rem;
+}
+
+.about-page__section p {
+  margin: 0 0 1rem;
+  font-size: 1.05rem;
+  max-width: 65ch;
+}
+
+.about-page__section-title {
+  font-size: 1.35rem;
+  margin: 0 0 1rem;
+}

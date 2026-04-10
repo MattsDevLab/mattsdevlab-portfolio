@@ -16,8 +16,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Matt's Dev Lab",
+  title: "MattsDevLab",
   description: "Portfolio of Matthew Bagley, frontend developer specialising in accessibility and scalable UI development.",
+  icons: {
+    icon: '/favicon.svg',
+  },
 };
 
 export default function RootLayout({
