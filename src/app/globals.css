@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #171717;
+  --foreground: #ffffff;
 }
 
 @theme inline {
@@ -70,6 +70,7 @@ main {
 
 .site-header {
   border-bottom: 1px solid #e5e5e5;
+  background-color: var(--background);
 }
 
 .site-header__inner,
@@ -305,4 +306,25 @@ main {
 .about-page__section-title {
   font-size: 1.35rem;
   margin: 0 0 1rem;
+}
+
+/* Logo */
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.logo__text {
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.logo__accent {
+  color: #B0FF96;
 }

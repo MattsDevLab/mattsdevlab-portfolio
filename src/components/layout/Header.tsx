@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Logo from '@/components/elements/Logo';
 
 const navItems = [
     { href: '/', label: 'Home'},
@@ -11,9 +12,7 @@ export default function Header(){
     return(
         <header className="site-header">
             <div className="site-header__inner">
-                <Link href="/" className="site-header__logo">
-                    Matt<span className="site-header__logo-accent">sDevLab</span>    
-                </Link>
+                <Logo />
                 <nav aria-label="Primary" className="site-header__nav">
                     <ul className="site-header__menu">
                         {navItems.map((item) => (
