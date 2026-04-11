@@ -3,6 +3,32 @@
 body{
   overflow-x: hidden;
 }
+
+/* Layout
+----------------------------------------------------------------------------- */
+
+.s-pad{
+  padding-block: a.$section-spacing;
+}
+
+.inner__wrapper {
+  max-width: clamp(320px, 90%, a.$site-width);
+  width: 100%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin: 0 auto;
+
+  @include a.min-width(a.$break-tablet-large) {
+    padding-right: 4rem;
+    padding-left: 4rem;
+  }
+
+  @include a.min-width(a.$break-desktop-small) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
 /* Accessibility
 ----------------------------------------------------------------------------- */
 .sr-only {

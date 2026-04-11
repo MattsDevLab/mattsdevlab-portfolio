@@ -8,9 +8,10 @@ $secondary-color: #A8ADAD;
 $tertiary-color: #424242;
 $accent-color: $primary-color;
 
-
+$background-color: #201F1F;
 // Neutral colours
 $neutral-100: #0A0A0A;
+$neautral-10: #ADAAAA;
 
 // System colours
 $system--error: #ea6f50;
@@ -25,9 +26,14 @@ $body-copy-color: $neutral-100;
 $overlay: rgba(0,0,0,.6);
 $overlay-white: rgba(244,244,244,.8);
 
+/* Spacing
+----------------------------------------------------------------------------- */
+$section-spacing: clamp(3rem, 8vw, 7.5rem);
+
 /* Typography
 ----------------------------------------------------------------------------- */
-$font-primary: 'Lexend Deca', sans-serif;
+$font-display: var(--font-display);
+$font-body: var(--font-body);
 $body-copy-size: 1rem;
 
 // Deprecated line height system

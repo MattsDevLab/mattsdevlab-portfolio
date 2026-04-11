@@ -1,0 +1,81 @@
+/* mixins
+----------------------------------------------------------------------------- */
+@use "sass:meta";
+@use "sass:math";
+
+// Min width
+@mixin min-width( $min-size ) {
+	@media ( min-width: $min-size ) {
+		@content;
+	}
+}
+
+// Max width
+@mixin max-width($max-size){
+  @media(max-width: $max-size){
+    @content;
+  }
+}
+
+// Min & Max width
+@mixin min-max-width($min-size, $max-size){
+  @media(min-width: $min-size) and (max-width: $max-size){
+    @content;
+  }
+}
+
+// Unit converter from px to rem
+// Remove unit from a number (e.g. 56px -> 56)
+@function strip-unit($value) {
+  @if meta.type-of($value) == 'number' and not math.is-unitless($value) {
+    @return math.div($value, ($value * 0 + 1));
+  }
+  @return $value;
+}
+
+// Convert px to rem, but leave rem/em/etc alone
+@function rem($value, $base: 16px) {
+  @if meta.type-of($value) != 'number' {
+    @error "rem() expects a number, got: #{$value}";
+  }
+
+  // already rem
+  @if math.unit($value) == 'rem' {
+    @return $value;
+  }
+
+  // unitless -> assume px
+  @if math.is-unitless($value) {
+    @return math.div($value, strip-unit($base)) * 1rem;
+  }
+
+  // px -> rem
+  @if math.unit($value) == 'px' {
+    @return math.div(strip-unit($value), strip-unit($base)) * 1rem;
+  }
+
+  // any other unit
+  @error "rem() expects px, unitless, or rem. Got: #{$value}";
+}
+
+//Font clamp 
+@mixin font-clamp($min, $max, $minVw, $maxVw) {
+  // Optional: a sane fallback
+  font-size: $min;
+
+  @media (min-width: $minVw) {
+    $range: $maxVw - $minVw;
+
+    font-size: clamp(
+      #{$min},
+      calc(
+        #{$min} + (#{ $max } - #{ $min }) * ((100vw - #{$minVw}) / #{$range})
+      ),
+      #{$max}
+    );
+  }
+
+  @media (min-width: $maxVw) {
+    font-size: $max;
+  }
+}

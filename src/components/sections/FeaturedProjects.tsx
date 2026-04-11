@@ -6,7 +6,7 @@ export default function FeaturedProjects() {
   const featuredProjects = projects.filter((project) => project.featured);
 
   return (
-    <section className="featured-projects">
+    <section className="featured-projects s-pad">
       <div className="featured-projects__inner">
         <p className="section-label">Selected Work</p>
         <h2 className="section-title">Frontend and accessibility-focused projects</h2>

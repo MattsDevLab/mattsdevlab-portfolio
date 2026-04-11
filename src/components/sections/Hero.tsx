@@ -2,8 +2,8 @@ import Link from 'next/link';
 
 export default function Hero(){
     return(
-        <section className="hero">
-            <div className="hero__inner">
+        <section className="hero s-pad">
+            <div className="inner__wrapper">
                 <p className="hero__eyebrow">Accessibility Specialist / UI Component Systems Architect / React & Next.js</p>
                 <h1 className="hero__title">Senior Frontend Engineer</h1>
                 <p className="hero__text">

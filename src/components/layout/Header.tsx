@@ -11,7 +11,7 @@ const navItems = [
 export default function Header(){
     return(
         <header className="site-header">
-            <div className="site-header__inner">
+            <div className="inner__wrapper">
                 <Logo />
                 <nav aria-label="Primary" className="site-header__nav">
                     <ul className="site-header__menu">
