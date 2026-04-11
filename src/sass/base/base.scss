@@ -1,0 +1,82 @@
+@use "../abstracts" as a;
+
+body{
+  overflow-x: hidden;
+}
+/* Accessibility
+----------------------------------------------------------------------------- */
+.sr-only {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+}
+
+// Skip content
+.skip-content:not(:focus):not(:hover) {
+  transform: translateY(-4em);
+  opacity: 0;
+}
+
+.skip-content:focus {
+  border-color: #062434;
+}
+
+.skip-content:focus,
+.skip-content:hover {
+  background-color: a.$secondary-color;
+  text-decoration: none;
+  color: white;
+}
+
+.skip-content {
+  margin: 0 auto;
+  position: absolute;
+  z-index: 100000;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 8px;
+  width: 100%;
+  opacity: 1;
+  text-align: center;
+}
+
+// Focus ring
+:focus {
+  outline: none;
+}
+
+:focus-visible {
+  outline: 2px solid a.$system--info;
+  outline-offset: 2px;
+}
+
+// Splide Focus Ring
+
+.splide.is-focus-in{
+  .splide__arrow:focus, .splide__pagination__page:focus{
+    outline: 3px solid a.$primary-color !important;
+  }
+}
+
+/* Scroll bars
+----------------------------------------------------------------------------- */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0D1210;
+}
+
+::-webkit-scrollbar-thumb {
+  background: a.$primary-color;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2BC44A;
+}

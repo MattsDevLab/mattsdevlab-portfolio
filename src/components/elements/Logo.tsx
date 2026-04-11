@@ -58,7 +58,7 @@ export default function Logo() {
         ))}
       </svg>
       <span className="logo__text">
-        Matts<span className="logo__accent">Dev</span>Lab
+        <span className="logo__accent">Matts</span>DevLab
       </span>
     </Link>
   );

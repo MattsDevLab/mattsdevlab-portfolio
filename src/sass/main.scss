@@ -1,4 +1,7 @@
 
+@use 'layout';
+@use 'base';
+
 :root {
   --background: #171717;
   --foreground: #ffffff;
@@ -51,64 +54,8 @@ main {
   min-height: 70vh;
 }
 
-.skip-link {
-  position: absolute;
-  top: -40px;
-  left: 1rem;
-  z-index: 1000;
-  padding: 0.75rem 1rem;
-  background: #000;
-  color: #fff;
-}
 
-.skip-link:focus {
-  top: 1rem;
-}
 
-/* Header */
-
-.site-header {
-  border-bottom: 1px solid #e5e5e5;
-  background-color: var(--background);
-}
-
-.site-header__inner,
-.site-footer__inner {
-  width: min(100% - 2rem, 1200px);
-  margin-inline: auto;
-}
-
-.site-header__inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 0;
-}
-
-.site-header__logo,
-.site-footer__logo {
-  font-size: 1.25rem;
-  font-weight: 700;
-}
-
-.site-header__logo-accent {
-  font-weight: 400;
-}
-
-.site-header__menu {
-  display: flex;
-  gap: 1.25rem;
-}
-
-.site-header__menu-link,
-.site-footer__link {
-  font-weight: 500;
-}
-
-.site-header__menu-link:hover,
-.site-footer__link:hover {
-  text-decoration: underline;
-}
 
 /* Footer */
 

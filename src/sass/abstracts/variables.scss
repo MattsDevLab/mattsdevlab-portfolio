@@ -1,0 +1,90 @@
+/* Variables
+----------------------------------------------------------------------------- 
+Colours
+----------------------------------------------------------------------------- */
+// Global brand colours
+$primary-color: #B0FF96;
+$secondary-color: #A8ADAD;
+$tertiary-color: #424242;
+$accent-color: $primary-color;
+
+
+// Neutral colours
+$neutral-100: #0A0A0A;
+
+// System colours
+$system--error: #ea6f50;
+$system--warning: #ffcc00;
+$system--info: #1857ce;
+$system--success: #4cd964;
+
+// Body copy colours
+$body-copy-color: $neutral-100;
+
+// Overlay colours
+$overlay: rgba(0,0,0,.6);
+$overlay-white: rgba(244,244,244,.8);
+
+/* Typography
+----------------------------------------------------------------------------- */
+$font-primary: 'Lexend Deca', sans-serif;
+$body-copy-size: 1rem;
+
+// Deprecated line height system
+$lh-base: 1;
+$lh-10: 1.1;
+$lh-11: 1.11;
+$lh-14: 1.14;
+$lh-16: 1.16;
+$lh-20: 1.2;
+$lh-25: 1.25;
+$lh-28: 1.28;
+$lh-33: 1.33;
+$lh-50: 1.5;
+$lh-66: 1.66;
+
+// New line height system
+$lh-xs: 1.1; // big headings, short labels
+$lh-sm: 1.2; // subheadings, UI text
+$lh-md: 1.33; // default body
+$lh-lg: 1.5; // long-form reading
+$lh-xl: 1.6; // optional: very airy layouts
+
+
+/* Layout
+----------------------------------------------------------------------------- */
+// Container widths
+$site-width: 1440px;
+
+// Vertical space 
+$space-xs: .5rem;
+$space-sm: 1rem;
+$space-md: 1.5rem;
+$space-lg: 2rem;
+$space-xl: 2.5rem;
+$space-xxl: 3rem;
+
+// Transitions & animations control
+$transition-basic: 200ms ease-in;
+
+// Shadows
+$surface-level-1: 0px 2px 8px 0px rgba(0,0,0,.1);
+$surface-level-2: 0px 6px 16px 0px rgba(0,0,0,.1);
+$surface-level-3: 0px 12px 24px 0px rgba(0,0,0,.1);
+$surface-level-4: 0px 24px 32px 0px rgba(0,0,0,.1);
+
+// Border radius
+$radius-sm: .25rem;
+$radius-md: .5rem;
+$radius-lg: 1rem;
+$radius-xl: 1.5rem;
+
+// Responsive media queries
+$break-mobile-small: 320px; // old phone
+$break-mobile-large: 480px; // modern phone
+$break-tablet-small: 768px; // tablet portrait
+$break-tablet-large: 1024px; // tablet landscape
+$break-laptop-small: 1120px; // laptop
+$break-laptop-large: 1440px; // 13'
+$break-desktop-small: 1536px; // 17' desktop
+$break-desktop-large: 1800px; // biiiig screens!

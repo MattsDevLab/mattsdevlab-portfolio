@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Space_Grotesk, Manrope } from "next/font/google";
-import "./sass/main.scss";
+import "../sass/main.scss";
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
+import NavPulse from '@/components/elements/NavPulse';
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
@@ -32,10 +33,11 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${spaceGrotesk.variable} ${manrope.variable}`}>
       <body>
-        <a href="#main-content" className="skip-link">
+        <a href="#main-content" className="skip-content">
           Skip to main content
         </a>
         <Header />
+        <NavPulse />
         <main id="main-content">{children}</main>
         <Footer />
       </body>
