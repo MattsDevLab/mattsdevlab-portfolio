@@ -1,7 +1,14 @@
 @use "../abstracts" as a;
 
+html {
+  font-size: 100%;
+}
+
 body{
+  margin: 0;
   overflow-x: hidden;
+  line-height: 28px;
+  background: #fff;
 }
 
 /* Layout
@@ -27,6 +34,11 @@ body{
     padding-right: 0;
     padding-left: 0;
   }
+}
+
+
+.text-highlgiht{
+  color: a.$primary-color;
 }
 
 /* Accessibility
@@ -70,6 +82,7 @@ body{
 }
 
 // Focus ring
+
 :focus {
   outline: none;
 }

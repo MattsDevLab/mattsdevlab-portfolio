@@ -1,6 +1,11 @@
 
 @use "../abstracts" as a;
 
+body{
+    font-family: var(--font-body);
+}
+
 h1, h2, h3, h4, h5, h6 {
-  font-family: a.$font-display, sans-serif; // Space Grotesk — headings
+  font-family: var(--font-display);
+  line-height: 1;
 }

@@ -4,7 +4,7 @@
 
 .site-header {
   position: relative;
-  background-color: #1c1c1c;
+  background-color: #1A2420;
 
   &::after {
     content: '';
@@ -65,7 +65,15 @@
 // Menu
 
 .site-header__menu-link{
-  color: a.$neautral-10;
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  font-size: .875rem;
+  letter-spacing: 2px;
+  transition: 300ms all ease;
+
+  &:hover{
+    color: #B0FF96;
+  }
 }
 
 .site-header__menu-link,

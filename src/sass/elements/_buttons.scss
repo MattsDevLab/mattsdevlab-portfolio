@@ -1,0 +1,70 @@
+@use "../abstracts" as a;
+
+/* Buttons
+----------------------------------------------------------------------------- */
+// global styles for basic buttons, pills and associated colours
+
+button{
+  border: 0;
+  cursor: pointer;
+}
+
+.pill{
+  position: relative;
+  min-height: 3rem;
+  width: fit-content;
+  padding: .85rem 1.5rem;
+  border-radius: 2px;
+  display: inline-flex;
+  gap: .75rem;
+  align-items: center;
+  font-size: .875rem;
+  font-family: var(--font-body);
+  line-height: a.$lh-50;
+  font-weight: 500;
+  color: a.$secondary-color;
+  line-height: 1.125;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  flex-shrink: 0;
+  transition: a.$transition-basic;
+}
+
+// Pill Styles -----------------------------------------------------------------
+
+.pill--primary{
+  border: 2px solid #B0FF96;
+  color: #0A1A0F;
+  background-color: a.$accent-color;
+}
+
+.pill--secondary{
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    background: transparent;
+
+    &:hover{
+        color: #B0FF96;
+        border-color: #B0FF96;
+    }
+}
+
+.pill--outline{
+  color: black;
+  border: 2px solid black;
+  background-color: transparent;
+
+  &::after{
+    background-color: a.$primary-color;
+  }
+
+  &:hover{
+    color: a.$secondary-color;
+    background-color: white;
+
+    &::after{
+      background-color: a.$accent-color;
+    }
+  }
+}

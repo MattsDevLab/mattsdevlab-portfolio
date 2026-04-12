@@ -1,12 +1,72 @@
 @use "../abstracts" as a;
 
-.hero{
-    background-color: #201F1F;
-    color: white;
+.hero {
+  position: relative;
+  overflow: hidden;
+  color: white;
+  background-color: #0D1210;
+  background-image: 
+    radial-gradient(ellipse 60% 60% at 50% 50%, transparent 50%, #0D1210 100%),
+    radial-gradient(circle, rgba(176, 255, 150, 0.18) 1px, transparent 1px);
+  background-size: 100% 100%, 32px 32px;
+  background-repeat: no-repeat, repeat;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: -15%;
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle, rgba(176, 255, 150, 0.10) 0%, transparent 65%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: -30%;
+    right: -15%;
+    width: 750px;
+    height: 750px;
+    background: radial-gradient(circle, rgba(176, 255, 150, 0.09) 0%, transparent 65%);
+    pointer-events: none;
+    z-index: 0;
+  }
+}
+
+.hero__noise {
+  position: absolute;
+  inset: 0;
+  opacity: 0.035; // very subtle — tune this value
+  pointer-events: none;
+  z-index: 1;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 200px 200px;
+  background-repeat: repeat;
+}
+
+.hero__content{
+  max-width: 800px;
+}
+
+.hero__title {
+  font-size: clamp(2.5rem, 5vw, 9rem);
+}
+
+.hero__tags{
+  display: flex;
+  gap: .5rem;
+}
+
+.hero__text{
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: #A8B8B0;
 }
 
 /* Hero */
-
 
 .hero__inner,
 .featured-projects__inner,
@@ -16,15 +76,9 @@
   margin-inline: auto;
 }
 
-.hero__inner {
-  max-width: 800px;
-}
-
-.hero__eyebrow,
 .section-label {
   margin: 0 0 1rem;
   font-size: 0.875rem;
-  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
 }
@@ -35,15 +89,17 @@
   line-height: 1.1;
 }
 
-.hero__title {
-  font-size: clamp(2.5rem, 5vw, 4.5rem);
+.hero__cta{
+  display: flex;
+  gap: 1rem;
 }
+
+
 
 .section-title {
   font-size: clamp(1.75rem, 3vw, 2.5rem);
 }
 
-.hero__text,
 .section-text,
 .project-card__text {
   max-width: 65ch;

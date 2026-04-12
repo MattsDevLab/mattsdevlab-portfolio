@@ -1,12 +1,11 @@
 
 @use 'layout';
 @use 'base';
+@use 'elements';
 
 :root {
   --background: #171717;
   --foreground: #ffffff;
-  --font-display: '';  // Next.js will override these
-  --font-body: '';     // with the actual font values
 }
 
 @theme inline {
@@ -29,17 +28,8 @@
   box-sizing: border-box;
 }
 
-html {
-  font-size: 100%;
-}
 
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  line-height: 1.5;
-  color: #111;
-  background: #fff;
-}
+
 
 a {
   color: inherit;

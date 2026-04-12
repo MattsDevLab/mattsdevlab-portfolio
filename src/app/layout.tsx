@@ -31,16 +31,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${spaceGrotesk.variable} ${manrope.variable}`}>
+    <html lang="en" suppressHydrationWarning className={`${spaceGrotesk.variable} ${manrope.variable}`}>
       <body>
         <a href="#main-content" className="skip-content">
           Skip to main content
         </a>
         <Header />
-        <NavPulse />
         <main id="main-content">{children}</main>
         <Footer />
       </body>
+      <NavPulse />
     </html>
   );
 }
