@@ -5,7 +5,7 @@ export default function Footer() {
     
     return (
         <footer className="site-footer">
-            <div className="site-footer__inner">
+            <div className="inner__wrapper">
                 <div className="site-footer__brand">
                     <Link href="/" className="site-footer__logo">
                         MattsDevLab

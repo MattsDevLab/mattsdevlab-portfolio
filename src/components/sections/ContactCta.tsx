@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default function contactCta(){
     return(
         <section className="contact-cta s-pad">
-            <div className="contact-cta__inner">
+            <div className="inner__wrapper">
                 <p className="section-label">Contact</p>
                 <h2 className="section-title">Let’s build something strong</h2>
                 <p className="section-text">

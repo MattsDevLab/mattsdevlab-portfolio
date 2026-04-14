@@ -82,37 +82,7 @@ main {
   margin-bottom: 1.5rem;
 }
 
-/* Project card */
 
-.project-card {
-  padding: 1.5rem;
-  border: 1px solid #e5e5e5;
-}
-
-.project-card__title {
-  margin-top: 0;
-  margin-bottom: 0.75rem;
-}
-
-.text-link {
-  font-weight: 600;
-  text-decoration: underline;
-}
-
-.project-card__tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin: 0 0 1rem;
-  padding: 0;
-  list-style: none;
-}
-
-.project-card__tag {
-  padding: 0.35rem 0.65rem;
-  border: 1px solid #d9d9d9;
-  font-size: 0.875rem;
-}
 
 /* Work page */
 

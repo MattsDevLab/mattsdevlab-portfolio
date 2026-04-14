@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default function AboutPreview(){
     return(
         <section className="about-preview s-pad">
-            <div className="about-preview__inner">
+            <div className="inner__wrapper">
                 <p className="section-label">About</p>
                 <h2 className="section-title">A frontend developer focused on clarity, usability, and growth</h2>
                 <p className="section-text">

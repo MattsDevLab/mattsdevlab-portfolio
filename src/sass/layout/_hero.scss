@@ -4,7 +4,7 @@
   position: relative;
   overflow: hidden;
   color: white;
-  background-color: #0D1210;
+  background-color: a.$background-color;
   background-image: 
     radial-gradient(ellipse 60% 60% at 50% 50%, transparent 50%, #0D1210 100%),
     radial-gradient(circle, rgba(176, 255, 150, 0.18) 1px, transparent 1px);
@@ -33,6 +33,11 @@
     background: radial-gradient(circle, rgba(176, 255, 150, 0.09) 0%, transparent 65%);
     pointer-events: none;
     z-index: 0;
+  }
+
+  .inner__wrapper{
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -66,68 +71,63 @@
   color: #A8B8B0;
 }
 
-/* Hero */
-
-.hero__inner,
-.featured-projects__inner,
-.about-preview__inner,
-.contact-cta__inner {
-  width: min(100% - 2rem, 1200px);
-  margin-inline: auto;
-}
-
-.section-label {
-  margin: 0 0 1rem;
-  font-size: 0.875rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-}
-
-.hero__title,
-.section-title {
-  margin: 0 0 1rem;
-  line-height: 1.1;
-}
+// Hero CTA
 
 .hero__cta{
   display: flex;
   gap: 1rem;
 }
 
+// Hero Meta
 
-
-.section-title {
-  font-size: clamp(1.75rem, 3vw, 2.5rem);
+.hero__meta{
+  align-self: flex-end;
 }
 
-.section-text,
-.project-card__text {
-  max-width: 65ch;
-  margin: 0 0 1.5rem;
-  font-size: 1.125rem;
+.hero__socials-label,
+.hero__location-label {
+  font-size: .75rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(176, 255, 150, 0.6);
+  margin-bottom: 8px;
+  text-align: right;
 }
 
-.hero__actions {
+.hero__socials-links {
   display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: flex-end;
 }
 
-.hero__button {
-  display: inline-flex;
+.hero__social-link {
+  display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0.9rem 1.25rem;
-  border: 1px solid #111;
-  font-weight: 600;
+  width: 36px;
+  height: 36px;
+  background: rgba(176, 255, 150, 0.05);
+  border: 1px solid rgba(176, 255, 150, 0.15);
+  border-radius: 6px;
+  color: rgba(176, 255, 150, 0.7);
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: rgba(176, 255, 150, 0.1);
+    border-color: rgba(176, 255, 150, 0.3);
+    color: #B0FF96;
+  }
 }
 
-.hero__button--primary {
-  background: #111;
-  color: #fff;
+.hero__location {
+  margin-top: 16px;
+  text-align: right;
 }
 
-.hero__button--secondary {
-  background: transparent;
-  color: #111;
+.hero__location-text {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  color: rgba(255, 255, 255, 0.7);
 }

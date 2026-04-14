@@ -3,15 +3,17 @@ import ProjectCard from '@/components/sections/ProjectCard';
 import { projects } from '@/data/projects';
 
 export default function FeaturedProjects() {
-  const featuredProjects = projects.filter((project) => project.featured);
+  const featuredProjects = projects
+    .filter((project) => project.featured)
+    .slice(0, 4);
 
   return (
     <section className="featured-projects s-pad">
-      <div className="featured-projects__inner">
-        <p className="section-label">Selected Work</p>
-        <h2 className="section-title">Frontend and accessibility-focused projects</h2>
+      <div className="inner__wrapper">
+        <p className="sub-title">Selected Work</p>
+        <h2 className="section-title">Frontend accessibility-focused projects</h2>
         <p className="section-text">
-            A selection of projects focused on accessibility, performance, and scalable frontend development across custom website builds.
+          A selection of projects focused on accessibility, performance, and scalable frontend development across custom website builds.
         </p>
 
         <div className="featured-projects__grid">
@@ -24,11 +26,12 @@ export default function FeaturedProjects() {
               href={project.href}
               slug={project.slug}
               featured={project.featured}
+              image={project.image}
             />
           ))}
         </div>
 
-        <Link href="/work" className="text-link">View all projects</Link>
+        <Link href="/work" className="pill pill--primary">View all projects</Link>
       </div>
     </section>
   );

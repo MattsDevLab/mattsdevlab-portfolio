@@ -1,4 +1,106 @@
-.featured-projects{
-    background: #080C0A;
-    color: white;
+@use "../abstracts" as a;
+
+// Variables
+$bg-color: #080C0A;
+$accent: rgba(176, 255, 150, 0.08);
+$orb-color: rgba(176, 255, 150, 0.06);
+
+.featured-projects {
+  position: relative;
+  overflow: hidden;
+  color: white;
+  background-color: $bg-color;
+  background-image:
+    radial-gradient(
+      ellipse 80% 80% at 50% 50%,
+      transparent 70%,
+      $bg-color 100%
+    ),
+    radial-gradient(
+      circle,
+      $accent 1px,
+      transparent 1px
+    );
+  background-size: 100% 100%, a.rem(32px) a.rem(32px);
+  background-repeat: no-repeat, repeat;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -20%;
+    right: -10%;
+    width: a.rem(600px);
+    height: a.rem(600px);
+    background: radial-gradient(circle, $orb-color 0%, transparent 65%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .inner__wrapper {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.featured-projects__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-block: 3rem;
+
+  .project-card {
+    &:first-child {
+      grid-column: 1 / -1;
+
+      .project-card__image {
+        aspect-ratio: 21 / 9;
+      }
+
+      .project-card__body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        align-items: start;
+      }
+
+      .project-card__tags {
+        grid-column: 1 / -1;
+      }
+
+      .project-card__title {
+        font-size: clamp(1.5rem, 3vw, 2rem);
+      }
+    }
+  }
+
+  @include a.max-width(a.$break-tablet-large) {
+    grid-template-columns: repeat(2, 1fr);
+
+    .project-card:first-child {
+      grid-column: 1 / -1;
+
+      .project-card__image {
+        aspect-ratio: 16 / 9;
+      }
+
+      .project-card__body {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+
+  @include a.max-width(a.$break-tablet-small) {
+    grid-template-columns: 1fr;
+    margin-block: 2rem;
+
+    .project-card:first-child {
+      .project-card__image {
+        aspect-ratio: 16 / 9;
+      }
+
+      .project-card__body {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
 }
