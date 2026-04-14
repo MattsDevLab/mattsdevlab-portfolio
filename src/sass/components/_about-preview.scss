@@ -1,5 +1,91 @@
-.about-preview{
-    background-color: #0D2020;
-    color: white;
+@use "../abstracts" as a;
 
+.about-preview {
+    background-color: #0D2020;
+    color: #F0F0F5;
+
+    .inner__wrapper {
+        display: flex;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    &__lh-col,
+    &__rh-col {
+        flex: 1;
+        min-width: 0;
+    }
+
+    &__lh-col {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+
+    &__rh-col {
+        display: flex;
+        flex-direction: column;
+
+        p {
+            color: rgba(240, 240, 245, 0.6);
+        }
+
+        .lead-text {
+            @include a.lead-text;
+            color: #F0F0F5;
+        }
+    }
+
+    &__title {
+        margin: 0;
+        @include a.heading-h2;
+        color: #F0F0F5;
+    }
+
+    &__divider {
+        width: 2.5rem;
+        height: 2px;
+        background-color: #4ade80;
+    }
+
+    &__stats {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    &__stat {
+        display: flex;
+        flex-direction: column;
+        gap: 0.375rem;
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid rgba(255, 255, 255, 0.07);
+        border-radius: 8px;
+        padding: 1rem;
+    }
+
+    &__stat-label {
+        @include a.sub-title-text;
+        color: rgba(240, 240, 245, 0.4);
+        font-size: 0.625rem;
+    }
+
+    &__stat-value {
+        @include a.heading-h3;
+        color: #F0F0F5;
+        display: flex;
+        align-items: baseline;
+        gap: 0.375rem;
+    }
+
+    &__stat-unit {
+        @include a.body-text;
+        color: rgba(240, 240, 245, 0.5);
+        font-size: 0.8125rem;
+    }
 }

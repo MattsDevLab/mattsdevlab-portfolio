@@ -12,7 +12,7 @@ export default function Hero(){
                         <span className="tags">UI Component Systems Architect</span>
                         <span className="tags">React & Next.js</span> 
                     </p>
-                    <h1 className="hero__title">Senior <span className="text-highlgiht">Frontend Engineer</span></h1>
+                    <h1 className="hero__title">Senior <span className="text-highlight">Frontend Engineer</span></h1>
                     <div className="hero__text">
                         <p>I architect accessible, scalable frontend systems built to last — then I make them better. 
                         Performance, maintainability, and continuous improvement aren&apos;t afterthoughts. They&apos;re the foundation.</p>

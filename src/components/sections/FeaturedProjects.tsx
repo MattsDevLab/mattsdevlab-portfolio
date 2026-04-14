@@ -10,8 +10,8 @@ export default function FeaturedProjects() {
   return (
     <section className="featured-projects s-pad">
       <div className="inner__wrapper">
-        <p className="sub-title">Selected Work</p>
-        <h2 className="section-title">Frontend accessibility-focused projects</h2>
+        <p className="sub-text">Selected Work</p>
+        <h2 className="section-title">Frontend <span className="text-highlight">accessibility-focused</span> projects</h2>
         <p className="section-text">
           A selection of projects focused on accessibility, performance, and scalable frontend development across custom website builds.
         </p>

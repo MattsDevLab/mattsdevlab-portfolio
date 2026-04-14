@@ -36,26 +36,35 @@ $font-display: var(--font-display);
 $font-body: var(--font-body);
 $body-copy-size: 1rem;
 
-// Deprecated line height system
-$lh-base: 1;
-$lh-10: 1.1;
-$lh-11: 1.11;
-$lh-14: 1.14;
-$lh-16: 1.16;
-$lh-20: 1.2;
-$lh-25: 1.25;
-$lh-28: 1.28;
-$lh-33: 1.33;
-$lh-50: 1.5;
-$lh-66: 1.66;
+// ── Font Sizes ───
+$fs-3xl:  clamp(2.5rem, 5vw, 6rem);           // 40px → 96px  h1
+$fs-2xl:  clamp(1.875rem, 3.5vw, 4rem);       // 30px → 64px  h2
+$fs-xl:   clamp(1.375rem, 2.2vw, 2.5rem);     // 22px → 40px  h3
+$fs-lg:   clamp(1.125rem, 1.5vw, 1.5rem);     // 18px → 24px  h4
+$fs-md:   clamp(1.125rem, 1.3vw, 1.375rem);   // 18px → 22px  lead
+$fs-sm:   clamp(1rem, 1.1vw, 1.125rem);       // 16px → 18px  body
+$fs-xs:   clamp(0.75rem, 0.9vw, 0.875rem);   // 12px → 14px  captions, eyebrow
 
-// New line height system
-$lh-xs: 1.1; // big headings, short labels
-$lh-sm: 1.2; // subheadings, UI text
-$lh-md: 1.33; // default body
-$lh-lg: 1.5; // long-form reading
-$lh-xl: 1.6; // optional: very airy layouts
 
+// ── Font Weights ───
+$fw-regular:   400;
+$fw-medium:    500;
+$fw-semibold:  600;
+$fw-bold:      700;
+
+// ── Line Heights ───
+$lh-xs: 1.1;    // big headings, short labels
+$lh-sm: 1.2;    // subheadings, UI text
+$lh-md: 1.33;   // default body
+$lh-lg: 1.5;    // long-form reading
+$lh-xl: 1.6;    // very airy layouts
+
+// ── Letter Spacing ───
+$ls-tight:   -0.03em;   // large display type
+$ls-snug:    -0.02em;   // headings
+$ls-normal:   0;        // body
+$ls-wide:     0.05em;   // UI labels
+$ls-wider:    0.1em;    // eyebrow / caps
 
 /* Layout
 ----------------------------------------------------------------------------- */
