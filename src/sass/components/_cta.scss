@@ -1,0 +1,87 @@
+@use "../abstracts" as a;
+
+$cta-card-bg: #0D1F0F;
+$cta-card-border: rgba(176, 255, 150, 0.12);
+$cta-card-border-hover: rgba(176, 255, 150, 0.25);
+$cta-dot-color: rgba(176, 255, 150, 0.04);
+
+.cta-banner {
+    background-color: #080c0a;
+    background-image: radial-gradient(
+        circle,
+        rgba(176, 255, 150, 0.03) 1px,
+        transparent 1px
+    );
+    background-size: 28px 28px;
+
+    &__card {
+
+        margin: 0 auto;
+        background: $cta-card-bg;
+        border: 1px solid $cta-card-border;
+        border-radius: a.rem(12px);
+        padding: 4rem 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        text-align: center;
+        transition: border-color 0.3s ease;
+
+        &:hover {
+            border-color: $cta-card-border-hover;
+        }
+    }
+
+    &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0.25rem;
+    }
+
+    &__title {
+        @include a.heading-h2;
+        color: #ffffff;
+        margin: 0;
+        text-align: center;
+    }
+
+    &__text {
+        @include a.body-text;
+        color: rgba(255, 255, 255, 0.5);
+        max-width: 48ch;
+        text-align: center;
+        margin: 0;
+        line-height: 1.75;
+    }
+
+    &__actions {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+        margin-top: 0.5rem;
+    }
+
+    @include a.max-width(a.$break-tablet-small) {
+        &__card {
+            padding: 2.5rem 1.5rem;
+        }
+
+        &__title {
+            font-size: a.rem(26px);
+        }
+
+        &__actions {
+            flex-direction: column;
+            width: 100%;
+
+            .pill {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    }
+}

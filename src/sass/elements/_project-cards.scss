@@ -82,20 +82,6 @@ $tag-border: rgba(176, 255, 150, 0.15);
     gap: 1rem;
   }
 
-  // &__link {
-  //   display: inline-flex;
-  //   align-items: center;
-  //   gap: a.rem(6px);
-  //   font-size: a.rem(14px);
-  //   font-weight: 500;
-  //   color: $tag-color;
-  //   transition: gap 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-
-  //   &:hover {
-  //     gap: a.rem(10px);
-  //   }
-  // }
-
   // Featured card — taller image
   &--featured {
     .project-card__image {

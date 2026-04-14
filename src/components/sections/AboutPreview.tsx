@@ -13,7 +13,7 @@ export default function AboutPreview(){
         <section className="about-preview s-pad">
             <div className="inner__wrapper">
                 <div className="about-preview__lh-col">
-                    <p className="sub-title">About Me / Origin Story</p>
+                    <p className="sub-text">About Me / Origin Story</p>
                     <h2 className="about-preview__title">
                         From 52 cents to<span className="text-highlgiht">{' '}</span>
                         <span className="text-highlight">Senior Engineer.</span>

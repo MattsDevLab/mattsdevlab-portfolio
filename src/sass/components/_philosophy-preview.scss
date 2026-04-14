@@ -1,0 +1,129 @@
+@use "../abstracts" as a;
+
+.philosophy {
+    background-color: #0d2020;
+
+    .inner__wrapper {
+        display: flex;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    &__lh-col {
+        flex: 1;
+        min-width: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    &__rh-col {
+        flex: 1;
+        min-width: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__title {
+        @include a.heading-h2;
+        color: #ffffff;
+        margin: 0;
+    }
+
+    &__lead {
+        @include a.lead-text;
+        color: rgba(255, 255, 255, 0.85);
+        margin: 0;
+    }
+
+    &__body {
+        @include a.body-text;
+        color: rgba(255, 255, 255, 0.5);
+        margin: 0;
+    }
+
+    &__pillars {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0;
+        list-style: none;
+        padding: 0;
+        margin: 0.5rem 0 0;
+        border-top: 1px solid rgba(176, 255, 150, 0.1);
+    }
+
+    &__pillar {
+        display: flex;
+        flex-direction: column;
+        gap: 0.375rem;
+        padding: 1.25rem 1.25rem 1.25rem 0;
+        border-bottom: 1px solid rgba(176, 255, 150, 0.1);
+        border-right: 1px solid rgba(176, 255, 150, 0.1);
+
+        &:nth-child(even) {
+            padding-left: 1.25rem;
+            border-right: none;
+        }
+
+        &:nth-last-child(-n+2) {
+            border-bottom: none;
+        }
+    }
+
+    &__pillar-label {
+        @include a.sub-title-text;
+        color: rgba(176, 255, 150, 0.5);
+        font-size: a.rem(10px);
+    }
+
+    &__pillar-value {
+        @include a.heading-h4;
+        color: #ffffff;
+        margin: 0;
+    }
+
+     &__svg {
+        width: 100%;
+        max-width: 480px;
+        height: auto;
+        opacity: 0.9;
+        transform-origin: center center;
+    }
+
+    @include a.max-width(a.$break-laptop-small) {
+        .inner__wrapper {
+            flex-direction: column;
+            gap: 3rem;
+        }
+
+        &__rh-col {
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+    }
+
+    @include a.max-width(a.$break-tablet-small) {
+        &__pillars {
+            grid-template-columns: 1fr;
+        }
+
+        &__pillar {
+            border-right: none;
+            padding: 1rem 0;
+
+            &:nth-child(even) {
+                padding-left: 0;
+            }
+
+            &:nth-last-child(-n+2) {
+                border-bottom: 1px solid rgba(176, 255, 150, 0.1);
+            }
+
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+}
