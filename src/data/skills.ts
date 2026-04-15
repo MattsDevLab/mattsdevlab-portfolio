@@ -8,12 +8,19 @@ export type TechCard  = {
 };
 
 export const techCards: TechCard[] = [
+        {
+        id: 'technical-leadership',
+        iconId: 'crown',
+        title: 'Technical Leadership',
+        description: 'Leading technical direction across projects — from client consultancy and scoping to architecture decisions, team leadership, and infrastructure improvements that drive scalable, efficient delivery.',
+        tags: ['Strategy', 'Client Consultancy', 'Team Leadership', 'Scoping & Estimation'],
+    },
      {
         id: 'frontend-architecture',
         iconId: 'frame-corners',
         title: 'Frontend Architecture',
-        description: 'Designing scalable frontend systems using BEM, 7:1 SASS architecture, and component-based patterns that teams can build on confidently over the long term.',
-        tags: ['HTML5', 'SASS', 'Design Systems', 'BEM'],
+        description: 'Designing scalable frontend systems using BEM, 7:1 SASS architecture, and component-based patterns that enable teams to build, scale, and maintain systems with confidence',
+        tags: ['HTML5', 'SASS', 'Design Systems', 'BEM', 'Component Architecture'],
     },
      {
         id: 'accessibility',
@@ -38,17 +45,10 @@ export const techCards: TechCard[] = [
         tags: ['WordPress', 'Joomla', 'ACF'],
     },
     {
-        id: 'build-tools',
-        iconId: 'wrench',
-        title: 'Build Tools',
-        description: 'Setting up and maintaining modern frontend build pipelines using Vite and Gulp, with SASS compilation, asset optimisation, and GitHub-based version control.',
-        tags: ['Vite', 'Gulp', 'GitHub'],
-    },
-    {
-        id: 'component-architecture',
+        id: 'performance-engineering',
         iconId: 'cube',
-        title: 'Component Architecture',
-        description: 'Building and maintaining scalable component libraries with clear documentation, consistent naming conventions, and reusable patterns that reduce build time and improve developer experience.',
-        tags: ['Component Library', 'Design Systems', 'BEM'],
+        title: 'Performance Engineering',
+        description: 'Optimising frontend performance through Lighthouse-driven audits, code splitting, lazy loading, and scalable asset strategies to deliver fast, high-performing user experiences.',
+        tags: ['Lighthouse', 'Core Web Vitals', 'LAZY LOADING', 'OPTIMISATION'],
     },
 ];

@@ -1,7 +1,7 @@
 import {
     LightningIcon,
     StackIcon,
-    WrenchIcon,
+    CrownIcon ,
     FrameCornersIcon,
     EyeIcon,
     CubeIcon,
@@ -12,7 +12,7 @@ import { type Icon } from '@phosphor-icons/react';
 const iconMap: Record<string, Icon> = {
     lightning: LightningIcon,
     stack: StackIcon,
-    wrench: WrenchIcon,
+    crown: CrownIcon ,
     'frame-corners': FrameCornersIcon,
     eye: EyeIcon,
     cube: CubeIcon,
@@ -24,12 +24,11 @@ export default function TechStack() {
             <div className="inner__wrapper">
                 <div className="tech-stack__header">
                     <div className="tech-stack__header-lh">
-                        <p className="sub-text">Core Technologies</p>
-                        <h2 className="tech-stack__title">Tech Stack</h2>
+                        <p className="sub-text">Core Capabilities</p>
+                        <h2 className="tech-stack__title">Engineering Expertise</h2>
                     </div>
                     <p className="tech-stack__intro">
-                        Leveraging deep technical expertise to architect accessible, 
-                        scalable frontend systems built for long-term maintainability.
+                        Architecting accessible, scalable frontend systems — from technical strategy and client consultancy to high-performance delivery.
                     </p>
                 </div>
                 <ul className="tech-stack__grid" aria-label="Core technology areas">
