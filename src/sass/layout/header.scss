@@ -5,6 +5,7 @@
 .site-header {
   position: relative;
   background-color: #1A2420;
+  border-bottom: 1px solid #24322d;
 
   &::after {
     content: '';
@@ -47,8 +48,7 @@
   margin-inline: auto;
 }
 
-.site-header__logo,
-.site-footer__logo {
+.site-header__logo{
   font-size: 1.25rem;
   font-weight: 700;
 }

@@ -1,1 +1,36 @@
 @use "../abstracts" as a;
+
+/* Footer */
+
+.site-footer {
+    padding: 2.5rem 0;
+    border-top: 1px solid #24322d;
+    background-color: #1a2420;
+    font-size: .875rem;
+    color: #fff9;
+
+  .inner__wrapper{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .site-footer__copyright{
+    font-size: .875rem;
+  }
+
+  .site-footer__meta{
+    display: flex;
+    align-items: center;
+  }
+}
+
+.site-footer__text,
+.site-footer__copyright {
+  margin: 0;
+}
+
+.site-footer__menu {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}

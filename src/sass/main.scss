@@ -49,31 +49,6 @@ main {
 
 
 
-
-/* Footer */
-
-.site-footer {
-  border-top: 1px solid #e5e5e5;
-  margin-top: 4rem;
-}
-
-.site-footer__inner {
-  display: grid;
-  gap: 1.5rem;
-  padding: 2rem 0;
-}
-
-.site-footer__text,
-.site-footer__copyright {
-  margin: 0;
-}
-
-.site-footer__menu {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
 /* Featured projects */
 
 .featured-projects__grid {

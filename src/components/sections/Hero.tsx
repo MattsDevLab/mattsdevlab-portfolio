@@ -4,7 +4,7 @@ import { ArrowRightIcon, GithubLogoIcon, LinkedinLogoIcon, EnvelopeSimpleIcon } 
 export default function Hero(){
     return(
         <section className="hero s-pad">
-             <div className="hero__noise" aria-hidden="true" />
+            <div className="hero__noise" aria-hidden="true" />
             <div className="inner__wrapper">
                 <div className="hero__content">
                     <p className="hero__tags">
