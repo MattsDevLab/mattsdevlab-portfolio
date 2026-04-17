@@ -2,9 +2,9 @@ import Link from 'next/link';
 import Logo from '@/components/elements/Logo';
 
 const navItems = [
-    { href: '/', label: 'Home'},
-    { href: '/about', label: 'About'},
     { href: '/work', label: 'Work'},
+    { href: '/about', label: 'About'},
+    { href: '/about', label: 'Philosophy'},
     { href: '/contact', label: 'Contact'},
 ];
 

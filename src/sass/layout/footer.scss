@@ -14,13 +14,26 @@
     justify-content: space-between;
   }
 
+  &__link{
+    font-weight: 200;
+    letter-spacing: 1px;
+  }
+
   .site-footer__copyright{
     font-size: .875rem;
+    font-weight: 200;
+    letter-spacing: .5px;
+
   }
 
   .site-footer__meta{
     display: flex;
     align-items: center;
+  }
+
+  &__social-links{
+    display: flex;
+    gap: .5rem;
   }
 }
 
