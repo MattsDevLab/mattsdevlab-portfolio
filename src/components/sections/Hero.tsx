@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import ScrollIndicator from '@/components/elements/ScrollIndicator';
 import { ArrowRightIcon, GithubLogoIcon, LinkedinLogoIcon, EnvelopeSimpleIcon } from '@phosphor-icons/react/dist/ssr';
 
 export default function Hero(){
@@ -13,10 +14,10 @@ export default function Hero(){
                         <span className="tags">React & Next.js</span> 
                     </p>
                     <h1 className="hero__title">Senior <span className="text-highlight">Frontend Engineer</span></h1>
-                    <div className="hero__text">
-                        <p>I architect accessible, scalable frontend systems built to last — then I make them better. 
+                    <div className="hero__text ">
+                        <p className="lead-text">I architect accessible, scalable frontend systems built to last — then I make them better. 
                         Performance, maintainability, and continuous improvement aren&apos;t afterthoughts. They&apos;re the foundation.</p>
-                        <p> Specialising in WCAG 2.2 AA accessibility engineering and component-based UI architecture, 
+                        <p className="lead-text"> Specialising in WCAG 2.2 AA accessibility engineering and component-based UI architecture, 
                         with a growing focus on React and Next.js.</p>
                     </div>
                     <div className="hero__cta">
@@ -49,6 +50,7 @@ export default function Hero(){
                     </div>
                 </div>
             </div>
+            <ScrollIndicator />
         </section>
     );
 }

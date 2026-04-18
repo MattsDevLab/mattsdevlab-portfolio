@@ -40,13 +40,34 @@ $orb-color: rgba(176, 255, 150, 0.06);
     position: relative;
     z-index: 1;
   }
+
+  .header{
+    margin-bottom: 4rem;
+    display: flex;
+
+    &__lh-col, &__rh-col{
+      flex: 1;
+    }
+
+    &__rh-col{
+      display: flex;
+      justify-content: flex-end;
+
+      .pill{
+        align-self: flex-end;
+      }
+    }
+
+    .lead-text{
+      margin: 0;
+    }
+  }
 }
 
 .featured-projects__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
-  margin-block: 3rem;
 
   .project-card {
     &:first-child {

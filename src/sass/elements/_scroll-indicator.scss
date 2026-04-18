@@ -1,0 +1,74 @@
+@use "../abstracts" as a;
+
+.scroll-indicator {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+
+    &:hover {
+        opacity: 1;
+    }
+
+    &:focus-visible {
+        outline: 2px solid a.$primary-color;
+        outline-offset: 4px;
+        border-radius: 4px;
+    }
+
+    @include a.max-width(a.$break-tablet-small) {
+        display: none;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .scroll-indicator__drop {
+            animation: none;
+        }
+    }
+
+    &__line {
+        width: 1px;
+        height: 32px;
+        background: rgba(176, 255, 150, 0.1);
+        position: relative;
+        overflow: hidden;
+        display: block;
+    }
+
+    &__drop {
+        position: absolute;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: a.$primary-color;
+        display: block;
+
+        @media (prefers-reduced-motion: no-preference) {
+            animation: scroll-drop 2s ease-in-out infinite;
+        }
+    }
+
+    &__dot {
+        width: 4px;
+        height: 4px;
+        background: rgba(176, 255, 150, 0.4);
+        border-radius: 50%;
+        display: block;
+    }
+}
+
+@keyframes scroll-drop {
+    0% { top: -100%; }
+    100% { top: 100%; }
+}

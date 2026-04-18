@@ -18,12 +18,20 @@ h4, .heading-h4 { @include a.heading-h4; }
 p  { @include a.body-text; }
 
 .sub-text{
+  margin-top: 0;
+  margin-bottom: 1rem;
   @include a.sub-title-text;
   color: a.$primary-color;
 }
 
+.section-title{
+  margin-top: 0;
+  margin-bottom: 2.5rem;
+}
+
 .lead-text{
   @include a.lead-text;
+  color: rgba(white, 1);
 }
 
 .body-text{

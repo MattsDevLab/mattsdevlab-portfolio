@@ -10,12 +10,18 @@ export default function FeaturedProjects() {
   return (
     <section className="featured-projects s-pad">
       <div className="inner__wrapper">
-        <p className="sub-text">Selected Work</p>
-        <h2 className="section-title">Frontend <span className="text-highlight">accessibility-focused</span> projects</h2>
-        <p className="section-text">
-          A selection of projects focused on accessibility, performance, and scalable frontend development across custom website builds.
-        </p>
-
+        <div className="header">
+            <div className="header__lh-col">
+               <p className="sub-text">Selected Work</p>
+               <h2 className="section-title"><span className="text-highlight">Accessibility-focused</span> Projects</h2>
+                <p className="lead-text">
+                  A selection of projects demonstrating accessibility-first development, performance optimisation, and scalable frontend architecture.
+                </p>
+            </div>
+            <div className="header__rh-col">
+              <Link href="/work" className="pill pill--primary">View all projects</Link>
+            </div>
+        </div>
         <div className="featured-projects__grid">
           {featuredProjects.map((project) => (
             <ProjectCard
@@ -30,8 +36,6 @@ export default function FeaturedProjects() {
             />
           ))}
         </div>
-
-        <Link href="/work" className="pill pill--primary">View all projects</Link>
       </div>
     </section>
   );
