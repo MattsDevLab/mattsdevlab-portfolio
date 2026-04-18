@@ -20,33 +20,26 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        gap: 2rem;
     }
 
     &__rh-col {
         display: flex;
         flex-direction: column;
 
-        p {
-            color: rgba(240, 240, 245, 0.6);
-        }
-
         .lead-text {
             @include a.lead-text;
-            color: #F0F0F5;
+        }
+
+        .para-text{
+            opacity: .8;
         }
     }
 
     &__title {
         margin: 0;
+        margin-bottom: 2.5rem;
         @include a.heading-h2;
         color: #F0F0F5;
-    }
-
-    &__divider {
-        width: 2.5rem;
-        height: 2px;
-        background-color: #4ade80;
     }
 
     &__stats {
@@ -67,6 +60,10 @@
         border: 1px solid rgba(255, 255, 255, 0.07);
         border-radius: 8px;
         padding: 1rem;
+    }
+
+    &__text{
+        margin-bottom: 2rem;
     }
 
     &__stat-label {
