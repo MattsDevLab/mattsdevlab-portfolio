@@ -7,11 +7,11 @@ export default function CTABanner() {
             <div className="hero__noise" aria-hidden="true" />
             <div className="inner__wrapper">
                 <div className="cta-banner__content">
+                    <p className="sub-text">Let&apos;s talk.</p>
                     <h2 className="cta-banner__title">
-                        Serious about quality, performance and scalability?
-                        <span className="text-highlight">let&apos;s talk.</span>
+                        Quality over shortcuts. 
                     </h2>
-                    <p className="cta-banner__text">
+                    <p className="cta-banner__text lead-text">
                         I work with teams who value accessibility, performance, and long-term thinking — not shortcuts. If that sounds like your approach, I’d like to hear from you.
                     </p>
                     <div className="cta-banner__actions">
