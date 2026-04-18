@@ -16,7 +16,7 @@ export default function AboutPreview(){
                 <div className="about-preview__lh-col">
                     <p className="sub-text">About Me</p>
                     <h2 className="about-preview__title">
-                        From 52 cents to<span className="text-highlgiht">{' '}</span>
+                        From 52 cents to<span className="text-highlight">{' '}</span>
                         <span className="text-highlight">Senior Engineer.</span>
                     </h2>
                     <ul className="about-preview__stats" aria-label="Key facts">

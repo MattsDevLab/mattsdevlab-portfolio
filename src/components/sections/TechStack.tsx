@@ -25,7 +25,7 @@ export default function TechStack() {
                 <div className="tech-stack__header">
                     <div className="tech-stack__header-lh">
                         <p className="sub-text">Core Capabilities</p>
-                        <h2 className="tech-stack__title">Engineering Expertise</h2>
+                        <h2 className="tech-stack__title"><span className="text-highlight">Engineering</span> Expertise</h2>
                     </div>
                     <p className="tech-stack__intro">
                         Architecting accessible, scalable frontend systems — from technical strategy and client consultancy to high-performance delivery.

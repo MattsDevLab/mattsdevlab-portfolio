@@ -14,17 +14,17 @@ $icon-color: #B0FF96;
     background-color: a.$background-color;
 
     &__header {
+        margin-bottom: 4rem;
         display: flex;
         align-items: flex-end;
         justify-content: space-between;
         gap: 2rem;
-        margin-bottom: 3rem;
+
     }
 
     &__header-lh {
         display: flex;
         flex-direction: column;
-        gap: 0.75rem;
     }
 
     &__title {
@@ -35,8 +35,8 @@ $icon-color: #B0FF96;
 
     &__intro {
         max-width: 36ch;
-        font-size: a.rem(15px);
-        color: rgba(255, 255, 255, 0.5);
+        font-size: clamp(1rem, 1.1vw, 1.125rem);
+        color: rgba(255, 255, 255, 1);
         line-height: 1.6;
         text-align: right;
         margin: 0;
