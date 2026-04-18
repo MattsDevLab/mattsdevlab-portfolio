@@ -17,7 +17,7 @@ export default function PhilosophyPreview() {
                         Engineering <span className="text-highlight">Clarity</span>{' '}
                         Out of Complexity.
                     </h2>
-                    <p className="philosophy__lead">
+                    <p className="lead-text">
                         I don&apos;t approach frontend development as decoration. Every system 
                         I build is engineered to last — accessible by default, scalable by 
                         design, and maintainable by anyone who inherits it.

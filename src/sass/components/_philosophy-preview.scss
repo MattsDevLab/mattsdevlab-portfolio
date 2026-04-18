@@ -14,7 +14,6 @@
         min-width: 0;
         display: flex;
         flex-direction: column;
-        gap: 1.5rem;
     }
 
     &__rh-col {
@@ -26,30 +25,28 @@
     }
 
     &__title {
+        margin-top: 0;
+        margin-bottom: 2.5rem;
         @include a.heading-h2;
         color: #ffffff;
-        margin: 0;
     }
 
-    &__lead {
-        @include a.lead-text;
-        color: rgba(255, 255, 255, 0.85);
-        margin: 0;
+    .lead-text{
+        margin-top: 0;
     }
 
     &__body {
         @include a.body-text;
-        color: rgba(255, 255, 255, 0.5);
-        margin: 0;
+        color: rgba(255, 255, 255, 0.9);
     }
 
     &__pillars {
+        margin-top: 2.5rem;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 0;
         list-style: none;
         padding: 0;
-        margin: 0.5rem 0 0;
         border-top: 1px solid rgba(176, 255, 150, 0.1);
     }
 
