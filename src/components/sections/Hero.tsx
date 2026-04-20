@@ -25,7 +25,7 @@ export default function Hero(){
                             See what I build <ArrowRightIcon size={18} weight="regular" />
                         </Link>
                         <Link href="/about" className="pill pill--secondary">
-                            About me <ArrowRightIcon size={18} weight="light" />
+                            About me <ArrowRightIcon size={18} weight="regular" />
                         </Link>
                     </div>
                 </div>

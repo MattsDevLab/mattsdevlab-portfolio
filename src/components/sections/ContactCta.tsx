@@ -17,10 +17,11 @@ export default function CTABanner() {
                     <div className="cta-banner__actions">
                         <Link href="/contact" className="pill pill--primary">
                             Let&apos;s work together
-                            <ArrowRightIcon size={16} weight="bold" aria-hidden="true" />
+                            <ArrowRightIcon size={18} weight="regular" aria-hidden="true" />
                         </Link>
                         <Link href="/work" className="pill pill--secondary">
                             See my work
+                            <ArrowRightIcon size={18} weight="regular" aria-hidden="true" />
                         </Link>
                     </div>
                 </div>

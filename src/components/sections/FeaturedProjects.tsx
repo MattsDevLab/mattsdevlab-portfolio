@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import ProjectCard from '@/components/sections/ProjectCard';
 import { projects } from '@/data/projects';
+import { ArrowRightIcon } from '@phosphor-icons/react/dist/ssr';
 
 export default function FeaturedProjects() {
   const featuredProjects = projects
@@ -19,7 +20,11 @@ export default function FeaturedProjects() {
                 </p>
             </div>
             <div className="header__rh-col">
-              <Link href="/work" className="pill pill--primary">View all projects</Link>
+              <Link href="/work" className="pill pill--primary">
+                View all projects
+                 <ArrowRightIcon size={18} weight="regular" aria-hidden="true" /> 
+              </Link>
+              
             </div>
         </div>
         <div className="featured-projects__grid">

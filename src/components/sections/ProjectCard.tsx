@@ -42,11 +42,11 @@ export default function ProjectCard({ title, summary, tags, href, slug, featured
 
         <div className="project-card__links">
           <Link href={`/work/${slug}`} className="project-card__link pill pill--primary">
-            View project <ArrowRightIcon size={16} weight="regular" />
+            View project <ArrowRightIcon size={18} weight="regular" />
           </Link>
           {isExternal && (
             <a href={href} className="project-card__link pill pill--secondary" target="_blank" rel="noreferrer">
-              Live site <ArrowUpRightIcon size={16} weight="regular" />
+              Live site <ArrowUpRightIcon size={18} weight="regular" />
             </a>
           )}
         </div>

@@ -51,7 +51,7 @@ export default function AboutPreview(){
                         </p>
                     </div>
                     <Link href="/about" className="pill pill--secondary">
-                         Read my story <ArrowRightIcon size={18} weight="light" />
+                         Read my story <ArrowRightIcon size={18} weight="regular" />
                     </Link>
                 </div>
             </div>
