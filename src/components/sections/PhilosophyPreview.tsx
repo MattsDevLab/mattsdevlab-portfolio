@@ -1,10 +1,10 @@
 import Link from 'next/link';
 
 const pillars = [
-    { label: 'Principle', value: 'Accessibility First' },
-    { label: 'Approach', value: 'Systems Thinking' },
+    { label: 'Principle', value: 'DRY by Default' },
+    { label: 'Approach', value: 'Atomic & Component-First' },
     { label: 'Standard', value: 'WCAG 2.2 AA' },
-    { label: 'Focus', value: 'Continuous Improvement' },
+    { label: 'Focus', value: 'Modern & Scalable' },
 ];
 
 export default function PhilosophyPreview() {
