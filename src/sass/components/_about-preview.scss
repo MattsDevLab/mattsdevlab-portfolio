@@ -6,8 +6,14 @@
 
     .inner__wrapper {
         display: flex;
+        flex-direction: column;
         align-items: center;
-        gap: 5rem;
+        gap: 1.5rem;
+
+        @include a.min-width(a.$break-tablet-small){
+            flex-direction: row;
+            gap: 5rem;
+        }
     }
 
     &__lh-col,
@@ -37,9 +43,13 @@
 
     &__title {
         margin: 0;
-        margin-bottom: 2.5rem;
+        margin-bottom: 1.5rem;
         @include a.heading-h2;
         color: #F0F0F5;
+
+        @include a.min-width(a.$break-mobile-large){
+            margin-bottom: 2.5rem;
+        }
     }
 
     &__stats {
@@ -63,7 +73,11 @@
     }
 
     &__text{
-        margin-bottom: 2rem;
+        margin-bottom: .5rem;
+
+        @include a.min-width(a.$break-mobile-large){
+            margin-bottom: 2rem;
+        }
     }
 
     &__stat-label {

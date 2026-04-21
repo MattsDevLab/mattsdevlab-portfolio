@@ -19,17 +19,26 @@ p  { @include a.body-text; }
 
 .sub-text{
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
   @include a.sub-title-text;
   color: a.$primary-color;
+
+  @include a.min-width(a.$break-mobile-large){
+    margin-bottom: 1rem;
+  }
 }
 
 .section-title{
   margin-top: 0;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
+
+  @include a.min-width(a.$break-mobile-large){
+      margin-bottom: 2.5rem;
+  }
 }
 
 .lead-text{
+  margin-top: 0;
   @include a.lead-text;
   color: rgba(white, 1);
 }

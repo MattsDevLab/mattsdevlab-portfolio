@@ -42,8 +42,13 @@ $orb-color: rgba(176, 255, 150, 0.06);
   }
 
   .header{
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     display: flex;
+    flex-direction: column;
+
+    @include a.min-width(a.$break-tablet-small){
+      margin-bottom: 4rem;
+    }
 
     &__lh-col, &__rh-col{
       flex: 1;
@@ -51,7 +56,11 @@ $orb-color: rgba(176, 255, 150, 0.06);
 
     &__rh-col{
       display: flex;
-      justify-content: flex-end;
+      justify-content: start;
+
+      @include a.min-width(a.$break-tablet-small){
+        justify-content: flex-end;
+      }
 
       .pill{
         align-self: flex-end;
@@ -60,6 +69,10 @@ $orb-color: rgba(176, 255, 150, 0.06);
 
     .lead-text{
       margin: 0;
+
+      @include a.max-width(a.$break-mobile-large){
+        margin-bottom: 1.5rem;
+      }
     }
   }
 }
@@ -111,7 +124,6 @@ $orb-color: rgba(176, 255, 150, 0.06);
 
   @include a.max-width(a.$break-tablet-small) {
     grid-template-columns: 1fr;
-    margin-block: 2rem;
 
     .project-card:first-child {
       .project-card__image {

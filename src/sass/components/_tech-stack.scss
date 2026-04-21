@@ -14,11 +14,16 @@ $icon-color: #B0FF96;
     background-color: a.$background-color;
 
     &__header {
-        margin-bottom: 4rem;
+        margin-bottom: 2rem;
         display: flex;
         align-items: flex-end;
         justify-content: space-between;
-        gap: 2rem;
+        gap: 1rem;
+
+        @include a.min-width(a.$break-mobile-large){
+            margin-bottom: 4rem;
+            gap: 2rem;
+        }
 
     }
 

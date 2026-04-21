@@ -80,6 +80,7 @@ $tag-border: rgba(176, 255, 150, 0.15);
     margin-top: auto;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: .5rem;
   }
 

@@ -40,7 +40,12 @@
 
   .inner__wrapper{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+
+    @include a.min-width(a.$break-tablet-small){
+      flex-direction: row;
+    }
   }
 
   &__content{
@@ -81,14 +86,22 @@
   }
 
   &__socials{
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+
+    @include a.min-width(a.$break-tablet-small){
+      margin-bottom: 2rem;
+    }
   }
 }
 
 // Hero Meta
 
 .hero__meta{
-  align-self: flex-end;
+  align-self: flex-start;
+
+  @include a.min-width(a.$break-tablet-small){
+    align-self: flex-end;
+  }
 }
 
 .hero__socials-label,
@@ -99,7 +112,11 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: a.$primary-color;
-  text-align: right;
+  text-align: left;
+
+  @include a.min-width(a.$break-tablet-small){
+    text-align: right;
+  }
 }
 
 .hero__socials-links {
@@ -128,7 +145,11 @@
 }
 
 .hero__location {
-  text-align: right;
+  text-align: left;
+
+  @include a.min-width(a.$break-tablet-small){
+    text-align: right;
+  }
 }
 
 .hero__location-text {

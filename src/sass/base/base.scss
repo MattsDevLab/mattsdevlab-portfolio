@@ -23,7 +23,7 @@ p{
 }
 
 .inner__wrapper {
-  max-width: clamp(320px, 90%, a.$site-width);
+  max-width: clamp(a.$break-mobile-large, 90%, a.$site-width);
   width: 100%;
   padding-right: 1rem;
   padding-left: 1rem;

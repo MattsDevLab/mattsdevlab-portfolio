@@ -5,8 +5,14 @@
 
     .inner__wrapper {
         display: flex;
+        flex-direction: column;
         align-items: center;
-        gap: 5rem;
+        gap: 2rem;
+
+        @include a.min-width(a.$break-mobile-large){
+            flex-direction: row;
+            gap: 5rem; 
+        }
     }
 
     &__lh-col {
@@ -26,9 +32,13 @@
 
     &__title {
         margin-top: 0;
-        margin-bottom: 2.5rem;
+        margin-bottom: 1rem;
         @include a.heading-h2;
         color: #ffffff;
+
+        @include a.min-width(a.$break-mobile-large){
+            margin-bottom: 2.5rem;
+        }
     }
 
     .lead-text{
@@ -38,16 +48,24 @@
     &__body {
         @include a.body-text;
         color: rgba(255, 255, 255, 0.9);
+
+        @include a.max-width(a.$break-mobile-large){
+            margin: 0;
+        }
     }
 
     &__pillars {
-        margin-top: 2.5rem;
+        margin-top: 1.5rem;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 0;
         list-style: none;
         padding: 0;
         border-top: 1px solid rgba(176, 255, 150, 0.1);
+
+        @include a.min-width(a.$break-mobile-large){
+            margin-top: 2.5rem;
+        }
     }
 
     &__pillar {
@@ -89,11 +107,6 @@
     }
 
     @include a.max-width(a.$break-laptop-small) {
-        .inner__wrapper {
-            flex-direction: column;
-            gap: 3rem;
-        }
-
         &__rh-col {
             width: 100%;
             max-width: 400px;

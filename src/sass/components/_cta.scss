@@ -40,7 +40,6 @@ $cta-dot-color: rgba(176, 255, 150, 0.04);
         background-repeat: repeat;
     }
 
-
     &__content {
         max-width: 800px;
         margin: 0 auto;
@@ -65,16 +64,23 @@ $cta-dot-color: rgba(176, 255, 150, 0.04);
 
     &__title {
         margin-top: 0;
-        margin-bottom: 1.5rem;
-        @include a.heading-h2;
+        margin-bottom: 1rem;
         color: #ffffff;
         text-align: center;
+
+        @include a.min-width(a.$break-mobile-large){
+            margin-bottom: 1.5rem;
+        }
     }
 
     &__text {
         margin-top: 0;
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem;
         text-align: center;
+
+        @include a.min-width(a.$break-mobile-large){
+            margin-bottom: 1.5rem;
+        }
     }
 
     &__actions {
@@ -89,10 +95,6 @@ $cta-dot-color: rgba(176, 255, 150, 0.04);
     @include a.max-width(a.$break-tablet-small) {
         &__card {
             padding: 2.5rem 1.5rem;
-        }
-
-        &__title {
-            font-size: a.rem(26px);
         }
 
         &__actions {
