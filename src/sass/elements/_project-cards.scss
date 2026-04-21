@@ -9,10 +9,6 @@ $tag-border: rgba(176, 255, 150, 0.15);
 
 .project-card {
     position: relative;
-    border: 1px solid $card-border;
-    background: a.$background-color;
-    color: green;
-    border-radius: a.rem(8px);
     overflow: hidden;
     transition: border-color 0.3s ease;
 
@@ -38,14 +34,18 @@ $tag-border: rgba(176, 255, 150, 0.15);
   }
 
   &__body {
-    padding: a.rem(20px);
+    padding: a.rem(32px);
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
   }
 
   &__tags {
     display: flex;
     flex-wrap: wrap;
-    gap: a.rem(6px);
-    margin: 0 0 0.75rem;
+    gap: a.rem(8px);
+    margin: 0 0 1.25rem;
     padding: 0;
     list-style: none;
   }
@@ -63,26 +63,28 @@ $tag-border: rgba(176, 255, 150, 0.15);
   }
 
   &__title {
-    @include a.font-clamp(1.1rem, 1.35rem, a.$break-tablet-small, a.$break-laptop-large);
     font-weight: 600;
     color: #ffffff;
     margin: 0 0 0.5rem;
   }
 
   &__text {
-    font-size: a.rem(14px);
+    flex: 1;
+    font-size: a.rem(16px);
     color: rgba(255, 255, 255, 0.5);
     line-height: 1.6;
     margin: 0 0 1.25rem;
   }
 
   &__links {
+    margin-top: auto;
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: .5rem;
   }
 
   // Featured card — taller image
+
   &--featured {
     .project-card__image {
       aspect-ratio: 16 / 9;

@@ -7,7 +7,7 @@ export default function CTABanner() {
             <div className="hero__noise" aria-hidden="true" />
             <div className="inner__wrapper">
                 <div className="cta-banner__content">
-                    <p className="sub-text">Let&apos;s talk.</p>
+                    <p className="sub-text">// Let&apos;s talk.</p>
                     <h2 className="cta-banner__title">
                         Quality over shortcuts. 
                     </h2>

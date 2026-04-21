@@ -24,7 +24,7 @@ export default function TechStack() {
             <div className="inner__wrapper">
                 <div className="tech-stack__header">
                     <div className="tech-stack__header-lh">
-                        <p className="sub-text">Core Capabilities</p>
+                        <p className="sub-text">// Core Capabilities</p>
                         <h2 className="tech-stack__title"><span className="text-highlight">Engineering</span> Expertise</h2>
                     </div>
                     <p className="tech-stack__intro">
@@ -37,12 +37,12 @@ export default function TechStack() {
                         return (
                             <li
                                 key={card.id}
-                                className={`tech-card${card.featured ? ' tech-card--featured' : ''}`}
+                                className={`tech-card card${card.featured ? ' tech-card--featured' : ''}`}
                             >
                                 <span className="tech-card__icon" aria-hidden="true">
                                     {Icon && <Icon size={28} weight="duotone" />}
                                 </span>
-                                <h3 className="tech-card__title">{card.title}</h3>
+                                <h3 className="tech-card__title heading-h4">{card.title}</h3>
                                 <p className="tech-card__description">{card.description}</p>
                                 <ul className="tech-card__tags" aria-label={`${card.title} technologies`}>
                                     {card.tags.map((tag) => (

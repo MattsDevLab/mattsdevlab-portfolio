@@ -12,7 +12,7 @@ export default function PhilosophyPreview() {
         <section className="philosophy s-pad">
             <div className="inner__wrapper">
                 <div className="philosophy__lh-col">
-                    <p className="sub-text">Engineering Philosophy</p>
+                    <p className="sub-text">// Engineering Philosophy</p>
                     <h2 className="philosophy__title">
                         Engineering <span className="text-highlight">Clarity</span>{' '}
                         Out of Complexity.

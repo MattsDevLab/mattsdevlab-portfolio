@@ -17,9 +17,9 @@ export default function ProjectCard({ title, summary, tags, href, slug, featured
   const isExternal = href.startsWith('http');
 
   return (
-    <article className={`project-card ${featured ? 'project-card--featured' : ''}`}>
+    <article className={`card project-card ${featured ? 'project-card--featured' : ''}`}>
       {image && (
-        <div className="project-card__image">
+        <div className="card__image project-card__image">
           <Image
             src={image}
             alt={`${title} project screenshot`}
@@ -37,7 +37,7 @@ export default function ProjectCard({ title, summary, tags, href, slug, featured
           ))}
         </ul>
 
-        <h3 className="project-card__title">{title}</h3>
+        <h3 className="project-card__title heading-h4">{title}</h3>
         <p className="project-card__text">{summary}</p>
 
         <div className="project-card__links">

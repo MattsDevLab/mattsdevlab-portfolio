@@ -31,7 +31,7 @@ export default function Hero(){
                 </div>
                 <div className="hero__meta">
                     <div className="hero__socials">
-                        <p className="hero__socials-label">Socials</p>
+                        <p className="hero__socials-label">// Connect</p>
                         <div className="hero__socials-links">
                         <a href="https://github.com/..." className="hero__social-link" aria-label="Matt's GitHub profile">
                             <GithubLogoIcon size={18} weight="light" />
@@ -45,8 +45,8 @@ export default function Hero(){
                         </div>
                     </div>
                     <div className="hero__location">
-                        <p className="hero__location-label">Location</p>
-                        <p className="hero__location-text">REMOTE // UK</p>
+                        <p className="hero__location-label">// Location</p>
+                        <p className="hero__location-text">REMOTE · UK</p>
                     </div>
                 </div>
             </div>
