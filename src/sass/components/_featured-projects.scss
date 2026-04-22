@@ -42,12 +42,13 @@ $orb-color: rgba(176, 255, 150, 0.06);
   }
 
   .header{
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
     display: flex;
     flex-direction: column;
 
     @include a.min-width(a.$break-tablet-small){
       margin-bottom: 4rem;
+      flex-direction: row;
     }
 
     &__lh-col, &__rh-col{

@@ -28,6 +28,11 @@ button{
   text-decoration: none;
   flex-shrink: 0;
   transition: a.$transition-basic;
+
+  @include a.max-width(380px){
+    width: 100%;
+    justify-content: space-between;
+  }
 }
 
 // Pill Styles -----------------------------------------------------------------

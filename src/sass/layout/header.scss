@@ -31,10 +31,11 @@
   }
 
   .inner__wrapper{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 0;
   }
 }
 
@@ -42,8 +43,6 @@
   from { transform: translateX(-140px); }
   to   { transform: translateX(calc(100vw + 140px)); }
 }
-
-
 
 .site-header__logo-accent {
   font-weight: 400;

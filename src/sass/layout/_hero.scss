@@ -50,6 +50,10 @@
 
   &__content{
     max-width: 800px;
+
+    @include a.max-width(a.$break-mobile-large){
+      margin-bottom: 1.5rem;
+    }
   } 
 
   &__noise {
@@ -67,26 +71,36 @@
     margin-top: 0;
     margin-bottom: 1.5rem;
     display: flex;
+    flex-wrap: wrap;
     gap: .5rem;
   }
 
   &__title{
     margin-top: 0;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
+
+    @include a.min-width(a.$break-mobile-large){
+      margin-bottom: 2.5rem;
+    }
   }
 
   &__text{
     margin-top: 0;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
+
+    @include a.min-width(a.$break-mobile-large){
+      margin-bottom: 2.5rem;
+    }
   }
 
   &__cta{
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
   }
 
   &__socials{
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 
     @include a.min-width(a.$break-tablet-small){
       margin-bottom: 2rem;
@@ -106,6 +120,7 @@
 
 .hero__socials-label,
 .hero__location-label {
+  margin-top: 0;
   margin-bottom: .5rem;
   font-size: .875rem;
   font-weight: 500;

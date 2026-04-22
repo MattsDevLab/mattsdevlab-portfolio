@@ -19,18 +19,14 @@ p  { @include a.body-text; }
 
 .sub-text{
   margin-top: 0;
-  margin-bottom: .5rem;
+  margin-bottom: 1rem;
   @include a.sub-title-text;
   color: a.$primary-color;
-
-  @include a.min-width(a.$break-mobile-large){
-    margin-bottom: 1rem;
-  }
 }
 
 .section-title{
   margin-top: 0;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 
   @include a.min-width(a.$break-mobile-large){
       margin-bottom: 2.5rem;
