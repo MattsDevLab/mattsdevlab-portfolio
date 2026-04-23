@@ -100,10 +100,6 @@ $orb-color: rgba(176, 255, 150, 0.06);
       .project-card__tags {
         grid-column: 1 / -1;
       }
-
-      .project-card__title {
-        font-size: clamp(1.5rem, 3vw, 2rem);
-      }
     }
   }
 

@@ -1,14 +1,37 @@
 @use '../abstracts' as a;
 
-.tags{
-    padding: .5rem .5rem;
+$tag-color: #B0FF96;
+$tag-bg: rgba(176, 255, 150, 0.08);
+$tag-border: rgba(176, 255, 150, 0.15);
+
+.tag{
+    padding: .5rem 1rem;
     border: 1px solid rgba(176, 255, 150, 0.2);
+    border-radius: .1875rem;
     text-transform: uppercase;
     font-family: var(--font-body);
-    font-size: .6875rem;
+    font-size: a.rem(12px);
     font-weight: 500;
     letter-spacing: 2px;
     line-height: 1.5;
     color: a.$primary-color;
     background: rgba(176, 255, 150, 0.08);
 }
+
+// Project Tags
+
+.tags--large{
+  @include a.sub-title-text; 
+}
+
+// .tech-stack__tag {
+//     font-size: a.rem(11px);
+//     font-weight: 500;
+//     letter-spacing: 0.06em;
+//     text-transform: uppercase;
+//     color: $tag-color;
+//     background: $tag-bg;
+//     border: 1px solid $tag-border;
+//     padding: a.rem(3px) a.rem(10px);
+//     border-radius: a.rem(3px);
+//   }

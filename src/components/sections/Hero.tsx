@@ -9,9 +9,9 @@ export default function Hero(){
             <div className="inner__wrapper">
                 <div className="hero__content">
                     <p className="hero__tags">
-                        <span className="tags">Accessibility Specialist</span>
-                        <span className="tags">UI Component Systems Architect</span>
-                        <span className="tags">React & Next.js</span> 
+                        <span className="tag">Accessibility Specialist</span>
+                        <span className="tag">UI Component Systems Architect</span>
+                        <span className="tag">React & Next.js</span> 
                     </p>
                     <h1 className="hero__title">Senior <span className="text-highlight">Frontend Engineer</span></h1>
                     <div className="hero__text ">
@@ -21,31 +21,31 @@ export default function Hero(){
                         with a growing focus on React and Next.js.</p>
                     </div>
                     <div className="hero__cta">
-                        <Link href="/work" className="pill pill--primary">
+                        <Link href="/work" className="pill pill--primary pill--large">
                             See what I build <ArrowRightIcon size={18} weight="regular" />
                         </Link>
-                        <Link href="/about" className="pill pill--secondary">
+                        <Link href="/about" className="pill pill--secondary pill--large">
                             About me <ArrowRightIcon size={18} weight="regular" />
                         </Link>
                     </div>
                 </div>
                 <div className="hero__meta">
                     <div className="hero__socials">
-                        <p className="hero__socials-label">// Connect</p>
+                        <p className="hero__socials-label sub-text">// Connect</p>
                         <div className="hero__socials-links">
                         <a href="https://github.com/..." className="hero__social-link" aria-label="Matt's GitHub profile">
-                            <GithubLogoIcon size={18} weight="light" />
+                            <GithubLogoIcon size={20} weight="light" />
                         </a>
                         <a href="https://linkedin.com/..." className="hero__social-link" aria-label="Matt's LinkedIn profile">
-                            <LinkedinLogoIcon size={18} weight="light" />
+                            <LinkedinLogoIcon size={20} weight="light" />
                         </a>
                         <a href="mailto:..." className="hero__social-link" aria-label="Email Matt">
-                            <EnvelopeSimpleIcon size={18} weight="light" />
+                            <EnvelopeSimpleIcon size={20} weight="light" />
                         </a>
                         </div>
                     </div>
                     <div className="hero__location">
-                        <p className="hero__location-label">// Location</p>
+                        <p className="hero__location-label sub-text">// Location</p>
                         <p className="hero__location-text">REMOTE · UK</p>
                     </div>
                 </div>

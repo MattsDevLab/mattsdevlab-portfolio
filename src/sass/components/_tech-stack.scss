@@ -5,9 +5,6 @@ $card-border: rgba(176, 255, 150, 0.08);
 $card-border-hover: rgba(176, 255, 150, 0.25);
 $card-featured-bg: #0D2A1A;
 $card-featured-border: rgba(176, 255, 150, 0.25);
-$tag-color: #B0FF96;
-$tag-bg: rgba(176, 255, 150, 0.08);
-$tag-border: rgba(176, 255, 150, 0.15);
 $icon-color: #B0FF96;
 
 .tech-stack {
@@ -40,9 +37,8 @@ $icon-color: #B0FF96;
 
     &__intro {
         max-width: 36ch;
-        font-size: clamp(1rem, 1.1vw, 1.125rem);
         color: rgba(255, 255, 255, 1);
-        line-height: 1.6;
+
         text-align: right;
         margin: 0;
     }
@@ -99,28 +95,16 @@ $icon-color: #B0FF96;
         margin: 0;
     }
 
-    &__tag {
-        font-size: a.rem(11px);
-        font-weight: 500;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-        color: $tag-color;
-        background: $tag-bg;
-        border: 1px solid $tag-border;
-        padding: a.rem(3px) a.rem(10px);
-        border-radius: a.rem(3px);
-    }
-
     &--featured {
         background: $card-featured-bg;
         border-color: $card-featured-border;
 
         .tech-card__title {
-            color: $tag-color;
+            color: a.$primary-color;
         }
 
         .tech-card__icon {
-            color: $tag-color;
+            color: a.$primary-color;
         }
     }
 

@@ -83,7 +83,6 @@
     &__stat-label {
         @include a.sub-title-text;
         color: rgba(240, 240, 245, 0.4);
-        font-size: 0.625rem;
     }
 
     &__stat-value {
@@ -97,6 +96,5 @@
     &__stat-unit {
         @include a.body-text;
         color: rgba(240, 240, 245, 0.5);
-        font-size: 0.8125rem;
     }
 }

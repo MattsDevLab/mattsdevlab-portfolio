@@ -33,12 +33,12 @@ export default function ProjectCard({ title, summary, tags, href, slug, featured
       <div className="project-card__body">
         <ul className="project-card__tags" aria-label={`${title} technologies`}>
           {tags.map((tag) => (
-            <li key={tag} className="project-card__tag">{tag}</li>
+            <li key={tag} className="project-card__tag tag">{tag}</li>
           ))}
         </ul>
 
-        <h3 className="project-card__title heading-h4">{title}</h3>
-        <p className="project-card__text">{summary}</p>
+        <h3 className="project-card__title">{title}</h3>
+        <p className="project-card__text ">{summary}</p>
 
         <div className="project-card__links">
           <Link href={`/work/${slug}`} className="project-card__link pill pill--primary">

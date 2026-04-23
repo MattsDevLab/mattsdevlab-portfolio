@@ -50,7 +50,7 @@ export default function AboutPreview(){
                             computer still powers everything I build today.
                         </p>
                     </div>
-                    <Link href="/about" className="pill pill--secondary">
+                    <Link href="/about" className="pill pill--secondary pill--large">
                          Read my story <ArrowRightIcon size={18} weight="regular" />
                     </Link>
                 </div>

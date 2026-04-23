@@ -20,7 +20,7 @@ export default function FeaturedProjects() {
                 </p>
             </div>
             <div className="header__rh-col">
-              <Link href="/work" className="pill pill--primary">
+              <Link href="/work" className="pill pill--primary pill--large">
                 View all projects
                  <ArrowRightIcon size={18} weight="regular" aria-hidden="true" /> 
               </Link>
@@ -28,7 +28,7 @@ export default function FeaturedProjects() {
             </div>
         </div>
         <div className="featured-projects__grid">
-          {featuredProjects.map((project) => (
+          {featuredProjects.map((project, index) => (
             <ProjectCard
               key={project.id}
               title={project.title}
@@ -36,7 +36,7 @@ export default function FeaturedProjects() {
               tags={project.tags}
               href={project.href}
               slug={project.slug}
-              featured={project.featured}
+              featured={index === 0}
               image={project.image}
             />
           ))}

@@ -27,7 +27,7 @@ export default function TechStack() {
                         <p className="sub-text">// Core Capabilities</p>
                         <h2 className="tech-stack__title"><span className="text-highlight">Engineering</span> Expertise</h2>
                     </div>
-                    <p className="tech-stack__intro">
+                    <p className="tech-stack__intro lead-text">
                         Architecting accessible, scalable frontend systems — from technical strategy and client consultancy to high-performance delivery.
                     </p>
                 </div>
@@ -46,7 +46,7 @@ export default function TechStack() {
                                 <p className="tech-card__description">{card.description}</p>
                                 <ul className="tech-card__tags" aria-label={`${card.title} technologies`}>
                                     {card.tags.map((tag) => (
-                                        <li key={tag} className="tech-card__tag">{tag}</li>
+                                        <li key={tag} className="tech-card__tag tag">{tag}</li>
                                     ))}
                                 </ul>
                             </li>

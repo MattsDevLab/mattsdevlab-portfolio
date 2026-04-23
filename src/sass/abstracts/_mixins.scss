@@ -119,9 +119,9 @@
 }
 
 @mixin body-text {
-  font-size: $fs-sm;
+  font-size: $body-copy-size;
   font-weight: $fw-regular;
-  line-height: $lh-md;
+  line-height: $lh-lg;
   letter-spacing: $ls-normal;
 }
 

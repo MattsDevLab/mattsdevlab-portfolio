@@ -14,6 +14,7 @@ export const techCards: TechCard[] = [
         title: 'Technical Leadership',
         description: 'Leading technical direction across projects — from client consultancy and scoping to architecture decisions, team leadership, and infrastructure improvements that drive scalable, efficient delivery.',
         tags: ['Strategy', 'Client Consultancy', 'Team Leadership', 'Scoping & Estimation'],
+        featured: true,
     },
      {
         id: 'frontend-architecture',
@@ -28,7 +29,7 @@ export const techCards: TechCard[] = [
         title: 'Accessibility',
         description: 'Specialist expertise in WCAG 2.2 AA compliance — including screen reader testing, accessibility audits, audit documentation, and embedding accessible patterns into every component by default.',
         tags: ['WCAG 2.2', 'Keyboard Controls', 'Screen Readers'],
-        featured: true,
+        featured: false,
     },
     {
         id: 'javascript',

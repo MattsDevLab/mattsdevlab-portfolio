@@ -3,9 +3,7 @@
 $card-bg: #111816;
 $card-border: rgba(176, 255, 150, 0.08);
 $card-border-hover: rgba(176, 255, 150, 0.25);
-$tag-color: #B0FF96;
-$tag-bg: rgba(176, 255, 150, 0.08);
-$tag-border: rgba(176, 255, 150, 0.15);
+
 
 .project-card {
     position: relative;
@@ -34,7 +32,7 @@ $tag-border: rgba(176, 255, 150, 0.15);
   }
 
   &__body {
-    padding: a.rem(32px);
+    padding: 1.5rem;
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -50,29 +48,14 @@ $tag-border: rgba(176, 255, 150, 0.15);
     list-style: none;
   }
 
-  &__tag {
-    font-size: a.rem(11px);
-    font-weight: 500;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: $tag-color;
-    background: $tag-bg;
-    border: 1px solid $tag-border;
-    padding: a.rem(3px) a.rem(10px);
-    border-radius: a.rem(3px);
-  }
-
   &__title {
-    font-weight: 600;
     color: #ffffff;
-    margin: 0 0 0.5rem;
+    margin: 0 0 1rem;
   }
 
   &__text {
     flex: 1;
-    font-size: a.rem(16px);
     color: rgba(255, 255, 255, 0.5);
-    line-height: 1.6;
     margin: 0 0 1.25rem;
   }
 
@@ -87,8 +70,16 @@ $tag-border: rgba(176, 255, 150, 0.15);
   // Featured card — taller image
 
   &--featured {
+    .project-card__title{
+      margin-bottom: 1.5rem;
+    }
+    
     .project-card__image {
       aspect-ratio: 16 / 9;
+    }
+
+    .project-card__body{
+      column-gap: 2rem;
     }
   }
 
@@ -96,10 +87,6 @@ $tag-border: rgba(176, 255, 150, 0.15);
   @include a.max-width(a.$break-tablet-small) {
     &__body {
       padding: a.rem(16px);
-    }
-
-    &__text {
-      font-size: a.rem(13px);
     }
   }
 }
