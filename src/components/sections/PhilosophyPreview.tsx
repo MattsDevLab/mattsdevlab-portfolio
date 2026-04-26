@@ -30,7 +30,7 @@ export default function PhilosophyPreview() {
                         {pillars.map((pillar) => (
                             <li key={pillar.label} className="philosophy__pillar">
                                 <span className="philosophy__pillar-label">{pillar.label}</span>
-                                <span className="philosophy__pillar-value">{pillar.value}</span>
+                                <span className="philosophy__pillar-value heading-h4">{pillar.value}</span>
                             </li>
                         ))}
                     </ul>

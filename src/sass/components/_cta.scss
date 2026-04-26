@@ -10,9 +10,9 @@ $cta-dot-color: rgba(176, 255, 150, 0.04);
     overflow: hidden;
     color: white;
     background-color: a.$background-color;
-    background-image: 
-    radial-gradient(ellipse 60% 60% at 50% 50%, transparent 50%, #0D1210 100%),
-    radial-gradient(circle, rgba(176, 255, 150, 0.18) 1px, transparent 1px);
+    background-image:
+    radial-gradient(80% 50% at 50% 100%, #0000 40%, #0d1210 100%),
+    radial-gradient(circle, #b0ff962e 1px, #0000 1px);
     background-size: 100% 100%, 32px 32px;
     background-repeat: no-repeat, repeat;
 

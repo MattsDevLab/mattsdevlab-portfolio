@@ -71,7 +71,6 @@
     &__pillar {
         display: flex;
         flex-direction: column;
-        gap: 0.375rem;
         padding: 1.25rem 1.25rem 1.25rem 0;
         border-bottom: 1px solid rgba(176, 255, 150, 0.1);
         border-right: 1px solid rgba(176, 255, 150, 0.1);
@@ -87,9 +86,7 @@
     }
 
     &__pillar-label {
-        @include a.sub-title-text;
         color: rgba(176, 255, 150, 0.5);
-        font-size: a.rem(10px);
     }
 
     &__pillar-value {
