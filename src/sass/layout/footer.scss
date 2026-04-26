@@ -3,7 +3,7 @@
 /* Footer */
 
 .site-footer {
-    padding: 2.5rem 0;
+    padding: 2rem 0;
     border-top: 1px solid #24322d;
     background-color: #1a2420;
     font-size: .875rem;
@@ -19,6 +19,11 @@
       justify-content: space-between;
       align-items: normal;
     }
+  }
+
+  &__nav{
+    display: flex;
+    align-items: center;
   }
 
   &__link{

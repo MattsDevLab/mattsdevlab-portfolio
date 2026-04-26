@@ -69,7 +69,7 @@ $cta-dot-color: rgba(176, 255, 150, 0.04);
         text-align: center;
 
         @include a.min-width(a.$break-mobile-large){
-            margin-bottom: 1.5rem;
+            margin-bottom: 2rem;
         }
     }
 
@@ -79,7 +79,7 @@ $cta-dot-color: rgba(176, 255, 150, 0.04);
         text-align: center;
 
         @include a.min-width(a.$break-mobile-large){
-            margin-bottom: 1.5rem;
+            margin-bottom: 2rem;
         }
     }
 
@@ -89,7 +89,6 @@ $cta-dot-color: rgba(176, 255, 150, 0.04);
         justify-content: center;
         gap: 1rem;
         flex-wrap: wrap;
-        margin-top: 0.5rem;
     }
 
     @include a.max-width(a.$break-tablet-small) {

@@ -15,13 +15,10 @@ $icon-color: #B0FF96;
         display: flex;
         align-items: flex-end;
         justify-content: space-between;
-        gap: 1rem;
 
         @include a.min-width(a.$break-mobile-large){
-            margin-bottom: 4rem;
-            gap: 2rem;
+            margin-bottom: 3rem;
         }
-
     }
 
     &__header-lh {
@@ -38,7 +35,6 @@ $icon-color: #B0FF96;
     &__intro {
         max-width: 36ch;
         color: rgba(255, 255, 255, 1);
-
         text-align: right;
         margin: 0;
     }
@@ -46,7 +42,7 @@ $icon-color: #B0FF96;
     &__grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 1.25rem;
+        gap: 1.5rem;
         list-style: none;
         padding: 0;
         margin: 0;
@@ -56,7 +52,6 @@ $icon-color: #B0FF96;
 .tech-card {
     display: flex;
     flex-direction: column;
-    gap: 1.25rem;
     background: $card-bg;
     border: 1px solid $card-border;
     border-radius: a.rem(8px);
@@ -68,21 +63,23 @@ $icon-color: #B0FF96;
     }
 
     &__icon {
+        margin-bottom: .5rem;
         font-size: 1.5rem;
         color: $icon-color;
         line-height: 1;
     }
 
     &__title {
+        margin-top: 0;
+        margin-bottom: 1rem;
         color: #ffffff;
-        margin: 0;
     }
 
     &__description {
+        margin-bottom: 2rem;
         font-size: a.rem(16px);
         color: rgba(255, 255, 255, 0.5);
         line-height: 1.7;
-        margin: 0;
         flex: 1;
     }
 
