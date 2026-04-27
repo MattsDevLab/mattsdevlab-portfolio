@@ -48,6 +48,10 @@ $orb-color: rgba(176, 255, 150, 0.06);
 
     @include a.min-width(a.$break-tablet-small){
       margin-bottom: 3rem;
+    }
+
+    @include a.min-width(a.$break-tablet-large){
+      margin-bottom: 3rem;
       flex-direction: row;
     }
 
@@ -59,7 +63,7 @@ $orb-color: rgba(176, 255, 150, 0.06);
       display: flex;
       justify-content: start;
 
-      @include a.min-width(a.$break-tablet-small){
+      @include a.min-width(a.$break-tablet-large){
         justify-content: flex-end;
       }
 
@@ -71,7 +75,7 @@ $orb-color: rgba(176, 255, 150, 0.06);
     .lead-text{
       margin: 0;
 
-      @include a.max-width(a.$break-mobile-large){
+      @include a.max-width(a.$break-tablet-large){
         margin-bottom: 1.5rem;
       }
     }

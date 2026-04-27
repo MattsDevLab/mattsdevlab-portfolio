@@ -43,16 +43,20 @@
     flex-direction: column;
     justify-content: space-between;
 
-    @include a.min-width(a.$break-tablet-small){
+    @include a.min-width(a.$break-tablet-large){
       flex-direction: row;
     }
   }
 
   &__content{
-    max-width: 800px;
+    max-width: 700px;
 
-    @include a.max-width(a.$break-mobile-large){
-      margin-bottom: 1.5rem;
+    @include a.max-width(a.$break-tablet-large){
+      margin-bottom: 2rem;
+    }
+
+    @include a.min-width(a.$break-laptop-large){
+      max-width: 800px;  
     }
   } 
 
@@ -79,7 +83,7 @@
     margin-top: 0;
     margin-bottom: 1.5rem;
 
-    @include a.min-width(a.$break-mobile-large){
+    @include a.min-width(a.$break-tablet-large){
       margin-bottom: 2rem;
     }
   }
@@ -88,7 +92,7 @@
     margin-top: 0;
     margin-bottom: 1.5rem;
 
-    @include a.min-width(a.$break-mobile-large){
+    @include a.min-width(a.$break-tablet-large){
       margin-bottom: 2rem;
     }
   }
@@ -102,7 +106,7 @@
   &__socials{
     margin-bottom: 1.5rem;
 
-    @include a.min-width(a.$break-tablet-small){
+    @include a.min-width(a.$break-tablet-large){
       margin-bottom: 2rem;
     }
   }
@@ -113,7 +117,7 @@
 .hero__meta{
   align-self: flex-start;
 
-  @include a.min-width(a.$break-tablet-small){
+  @include a.min-width(a.$break-tablet-large){
     align-self: flex-end;
   }
 }
@@ -124,7 +128,7 @@
   color: a.$primary-color;
   text-align: left;
 
-  @include a.min-width(a.$break-tablet-small){
+  @include a.min-width(a.$break-tablet-large){
     text-align: right;
   }
 }
@@ -162,7 +166,7 @@
 .hero__location {
   text-align: left;
 
-  @include a.min-width(a.$break-tablet-small){
+  @include a.min-width(a.$break-tablet-large){
     text-align: right;
   }
 }

@@ -28,7 +28,7 @@ p  { @include a.body-text; }
   margin-top: 0;
   margin-bottom: 1rem;
 
-  @include a.min-width(a.$break-mobile-large){
+  @include a.min-width(a.$break-tablet-large){
       margin-bottom: 2rem;
   }
 }

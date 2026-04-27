@@ -64,21 +64,21 @@ $cta-dot-color: rgba(176, 255, 150, 0.04);
 
     &__title {
         margin-top: 0;
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
         color: #ffffff;
         text-align: center;
 
-        @include a.min-width(a.$break-mobile-large){
+        @include a.min-width(a.$break-tablet-small){
             margin-bottom: 2rem;
         }
     }
 
     &__text {
         margin-top: 0;
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
         text-align: center;
 
-        @include a.min-width(a.$break-mobile-large){
+        @include a.min-width(a.$break-tablet-small){
             margin-bottom: 2rem;
         }
     }

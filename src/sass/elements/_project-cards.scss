@@ -32,11 +32,14 @@ $card-border-hover: rgba(176, 255, 150, 0.25);
   }
 
   &__body {
-    padding: 2rem;
+    padding: 1.5rem;
     display: flex;
     flex-direction: column;
     flex: 1;
 
+    @include a.min-width(a.$break-tablet-small){
+      padding: 2rem;
+    }
   }
 
   &__tags {
@@ -50,7 +53,12 @@ $card-border-hover: rgba(176, 255, 150, 0.25);
 
   &__title {
     color: #ffffff;
-    margin: 0 0 1rem;
+    margin: 0 0 .5rem;
+
+    @include a.min-width(a.$break-tablet-small){
+      margin: 0 0 1rem;
+
+    }
   }
 
   &__text {
@@ -71,7 +79,11 @@ $card-border-hover: rgba(176, 255, 150, 0.25);
 
   &--featured {
     .project-card__title{
-      margin-bottom: 1.5rem;
+      margin-bottom: .5rem;
+
+      @include a.min-width(a.$break-tablet-small){
+        margin-bottom: 1.5rem;
+      }
     }
     
     .project-card__image {
@@ -80,13 +92,6 @@ $card-border-hover: rgba(176, 255, 150, 0.25);
 
     .project-card__body{
       column-gap: 2rem;
-    }
-  }
-
-  // Responsive
-  @include a.max-width(a.$break-tablet-small) {
-    &__body {
-      padding: a.rem(16px);
     }
   }
 }
