@@ -1,8 +1,16 @@
 import Link from 'next/link';
+import PageHero from '@/components/sections/PageHero';
+import ContactCta from '@/components/sections/ContactCta';
 
 export default function AboutPage(){
     return(
-        <div className="about-page">
+        <>
+    <PageHero
+      label="// About Me"
+      title={<>Senior <span className="text-highlight">Frontend Engineer</span></>}
+      description="10+ years building accessible, scalable frontend systems — from WCAG-compliant component libraries to large-scale architecture and technical leadership."
+    />
+    <div className="about-page">
             <div className="about-page__inner">
 
             {/* Intro */}
@@ -89,5 +97,7 @@ export default function AboutPage(){
         </section>
       </div>
     </div>
+    <ContactCta />
+    </>
     );
 }

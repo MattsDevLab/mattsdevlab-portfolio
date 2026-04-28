@@ -63,16 +63,14 @@
 
   &:hover{
     color: #B0FF96;
+    text-shadow: 0 0 8px a.$primary-color, 0 0 20px #4ade8066;
+    text-decoration: none;
+    
   }
 }
 
 .site-header__menu-link{
   font-weight: 300;
-}
-
-.site-header__menu-link:hover,
-.site-footer__link:hover {
-  text-decoration: underline;
 }
 
 

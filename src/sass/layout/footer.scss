@@ -29,6 +29,13 @@
   &__link{
     font-weight: 200;
     letter-spacing: 1px;
+    transition: a.$transition-basic;
+
+    &:hover{
+      color: #B0FF96;
+      text-shadow: 0 0 8px a.$primary-color, 0 0 20px #4ade8066;
+      text-decoration: none;
+    }
   }
 
   .site-footer__copyright{

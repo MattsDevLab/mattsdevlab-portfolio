@@ -1,6 +1,8 @@
 import { projects } from '@/data/projects';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import PageHero from '@/components/sections/PageHero';
+import ContactCta from '@/components/sections/ContactCta';
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -17,24 +19,19 @@ export default async function ProjectPage({ params }: Props) {
 
   return (
     <article className="project-page">
+      <PageHero
+        label={<Link href="/work" className="page-hero__back">← Back to all projects</Link>}
+        title={project.title}
+        description={project.summary}
+      />
       <div className="project-page__inner">
 
-        <Link href="/work" className="project-page__back">
-          ← Back to all projects
-        </Link>
-
-        {/* Header */}
-        <header className="project-page__header">
-          <p className="section-label">{project.role}</p>
-          <h1 className="section-title">{project.title}</h1>
-          <p className="project-page__summary">{project.summary}</p>
-
+        <div className="project-page__meta">
           <ul className="project-card__tags" aria-label="Technologies used">
             {project.tags.map((tag) => (
               <li key={tag} className="project-card__tag">{tag}</li>
             ))}
           </ul>
-
           {project.href.startsWith('http') && (
             <a
               href={project.href}
@@ -45,7 +42,7 @@ export default async function ProjectPage({ params }: Props) {
               View live site ↗
             </a>
           )}
-        </header>
+        </div>
 
         {/* Case study content */}
         <div className="project-page__body">
@@ -81,6 +78,7 @@ export default async function ProjectPage({ params }: Props) {
         </div>
 
       </div>
+      <ContactCta />
     </article>
   );
 }

@@ -4,7 +4,7 @@ import Logo from '@/components/elements/Logo';
 const navItems = [
     { href: '/work', label: 'Work'},
     { href: '/about', label: 'About'},
-    { href: '/about', label: 'Philosophy'},
+    { href: '/philosophy', label: 'Philosophy'},
     { href: '/contact', label: 'Contact'},
 ];
 

@@ -12,20 +12,19 @@ export default function FeaturedProjects() {
     <section className="featured-projects s-pad">
       <div className="inner__wrapper">
         <div className="header">
-            <div className="header__lh-col">
-               <p className="sub-text">// Selected Work</p>
-               <h2 className="section-title"><span className="text-highlight">Accessibility-focused</span> Projects</h2>
-                <p className="lead-text">
-                  A selection of projects demonstrating accessibility-first development, performance optimisation, and scalable frontend architecture.
-                </p>
-            </div>
-            <div className="header__rh-col">
-              <Link href="/work" className="pill pill--primary pill--large">
-                View all projects
-                 <ArrowRightIcon size={18} weight="regular" aria-hidden="true" /> 
-              </Link>
-              
-            </div>
+          <div className="header__lh-col">
+            <p className="sub-text">// Selected Work</p>
+            <h2 className="section-title"><span className="text-highlight">Accessibility-focused</span> Projects</h2>
+            <p className="lead-text">
+              A selection of projects demonstrating accessibility-first development, performance optimisation, and scalable frontend architecture.
+            </p>
+          </div>
+          <div className="header__rh-col">
+            <Link href="/work" className="pill pill--primary pill--large">
+              View all projects
+                <ArrowRightIcon size={18} weight="regular" aria-hidden="true" /> 
+            </Link>
+          </div>
         </div>
         <div className="featured-projects__grid">
           {featuredProjects.map((project, index) => (

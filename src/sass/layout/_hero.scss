@@ -154,8 +154,8 @@
   &:hover {
     background: rgba(176, 255, 150, 0.1);
     // border-color: rgba(176, 255, 150, 0.3);
-    color: #B0FF96;
-    border-color: #B0FF96;
+    color: a.$primary-color;
+    border-color: a.$primary-color;
     box-shadow: 
       0 0 12px rgba(176, 255, 150, 0.3),
       0 0 32px rgba(176, 255, 150, 0.1);
