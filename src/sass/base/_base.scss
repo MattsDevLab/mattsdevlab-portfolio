@@ -65,9 +65,10 @@ p{
 
 .skip-content:focus,
 .skip-content:hover {
-  background-color: a.$secondary-color;
+  background-color: a.$primary-color;
   text-decoration: none;
-  color: white;
+  color: a.$background-color;
+  font-weight: 500;
 }
 
 .skip-content {
@@ -90,7 +91,7 @@ p{
 }
 
 :focus-visible {
-  outline: 2px solid a.$system--info;
+  outline: 2px solid a.$primary-color;
   outline-offset: 2px;
 }
 
