@@ -14,17 +14,17 @@ export default function Footer() {
                 </div>
                 <ul className="site-footer__social-links">
                     <li>
-                        <a href="https://github.com/..." className="hero__social-link" aria-label="Matt's GitHub profile">
+                        <a href="https://github.com/MattsDevLab" className="hero__social-link" aria-label="Matt's GitHub profile">
                             <GithubLogoIcon size={18} weight="light" />
                         </a>
                     </li>
                     <li>
-                        <a href="https://linkedin.com/..." className="hero__social-link" aria-label="Matt's LinkedIn profile">
+                        <a href="https://www.linkedin.com/in/mattsdevlab/" className="hero__social-link" aria-label="Matt's LinkedIn profile">
                             <LinkedinLogoIcon size={18} weight="light" />
                         </a>
                     </li>
                     <li>
-                        <a href="mailto:..." className="hero__social-link" aria-label="Email Matt">
+                        <a href="mailto:mattsdevlab@gmail.com" className="hero__social-link" aria-label="Email Matt">
                             <EnvelopeSimpleIcon size={18} weight="light" />
                         </a>
                     </li>

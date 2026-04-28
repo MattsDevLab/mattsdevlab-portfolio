@@ -1,8 +1,10 @@
 import ProjectCard from '@/components/sections/ProjectCard';
 import { projects } from '@/data/projects';
+import ContactCta from '@/components/sections/ContactCta';
 
 export default function WorkPage() {
   return (
+    <>
     <section className="work-page s-pad">
       <div className="work-page__inner">
         <p className="section-label">Work</p>
@@ -24,7 +26,10 @@ export default function WorkPage() {
             />
           ))}
         </div>
+
       </div>
     </section>
+    <ContactCta />
+  </>
   );
 }

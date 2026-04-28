@@ -33,13 +33,13 @@ export default function Hero(){
                     <div className="hero__socials">
                         <p className="hero__socials-label sub-text">// Connect</p>
                         <div className="hero__socials-links">
-                        <a href="https://github.com/..." className="hero__social-link" aria-label="Matt's GitHub profile">
+                        <a href="https://github.com/MattsDevLab" className="hero__social-link" aria-label="Matt's GitHub profile">
                             <GithubLogoIcon size={20} weight="light" />
                         </a>
-                        <a href="https://linkedin.com/..." className="hero__social-link" aria-label="Matt's LinkedIn profile">
+                        <a href="https://www.linkedin.com/in/mattsdevlab/" className="hero__social-link" aria-label="Matt's LinkedIn profile">
                             <LinkedinLogoIcon size={20} weight="light" />
                         </a>
-                        <a href="mailto:..." className="hero__social-link" aria-label="Email Matt">
+                        <a href="mailto:mattsdevlab@gmail.com" className="hero__social-link" aria-label="Email Matt">
                             <EnvelopeSimpleIcon size={20} weight="light" />
                         </a>
                         </div>
