@@ -9,7 +9,7 @@ export default function FeaturedProjects() {
     .slice(0, 4);
 
   return (
-    <section className="featured-projects s-pad">
+    <section id="featured-projects" className="featured-projects s-pad">
       <div className="inner__wrapper">
         <div className="header">
           <div className="header__lh-col">
@@ -20,10 +20,10 @@ export default function FeaturedProjects() {
             </p>
           </div>
           <div className="header__rh-col">
-            <Link href="/work" className="pill pill--primary pill--large">
+            {/* <Link href="/work" className="pill pill--primary pill--large">
               View all projects
                 <ArrowRightIcon size={18} weight="regular" aria-hidden="true" /> 
-            </Link>
+            </Link> */}
           </div>
         </div>
         <div className="featured-projects__grid">

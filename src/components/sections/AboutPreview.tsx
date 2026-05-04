@@ -11,7 +11,7 @@ export default function AboutPreview(){
     ];
 
     return(
-        <section className="about-preview s-pad">
+        <section id="about-preview" className="about-preview s-pad">
             <div className="inner__wrapper">
                 <div className="about-preview__lh-col">
                     <p className="sub-text">// About Me</p>
@@ -50,9 +50,9 @@ export default function AboutPreview(){
                             computer still powers everything I build today.
                         </p>
                     </div>
-                    <Link href="/about" className="pill pill--secondary pill--large">
+                    {/* <Link href="/about" className="pill pill--secondary pill--large">
                          Read my story <ArrowRightIcon size={18} weight="regular" />
-                    </Link>
+                    </Link> */}
                 </div>
             </div>
         </section>

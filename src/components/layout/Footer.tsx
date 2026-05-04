@@ -29,7 +29,7 @@ export default function Footer() {
                         </a>
                     </li>
                 </ul>
-                <nav aria-label="Footer" className="site-footer__nav">
+                {/* <nav aria-label="Footer" className="site-footer__nav">
                     <ul className="site-footer__menu">
                         <li>
                             <Link href="/work" className="site-footer__link">
@@ -53,7 +53,7 @@ export default function Footer() {
                           </Link>  
                         </li>
                     </ul>
-                </nav>
+                </nav> */}
             </div>
         </footer>
     )

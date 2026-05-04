@@ -15,11 +15,11 @@ export default function CTABanner() {
                         I work with teams who value accessibility, performance, and long-term thinking — not shortcuts. If that sounds like your approach, I’d like to hear from you.
                     </p>
                     <div className="cta-banner__actions">
-                         <Link href="/work" className="pill pill--secondary pill--large">
+                         {/* <Link href="/work" className="pill pill--secondary pill--large">
                             See my work
                             <ArrowRightIcon size={18} weight="regular" aria-hidden="true" />
-                        </Link>
-                        <Link href="/contact" className="pill pill--primary pill--large">
+                        </Link> */}
+                        <Link href="mailto:mattsdevlab@gmail.com" className="pill pill--primary pill--large">
                             Let&apos;s work together
                             <ArrowRightIcon size={18} weight="regular" aria-hidden="true" />
                         </Link>

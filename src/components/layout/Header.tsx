@@ -13,7 +13,7 @@ export default function Header(){
         <header className="site-header">
             <div className="inner__wrapper">
                 <Logo />
-                <nav aria-label="Primary" className="site-header__nav">
+                {/* <nav aria-label="Primary" className="site-header__nav">
                     <ul className="site-header__menu">
                         {navItems.map((item) => (
                             <li key={item.href} className="site-header__menu-item">
@@ -23,7 +23,7 @@ export default function Header(){
                             </li>
                         ))}
                     </ul>
-                </nav>
+                </nav> */}
             </div>
           
         </header>

@@ -15,16 +15,16 @@ export default function Hero(){
                     </p>
                     <h1 className="hero__title">Senior <span className="text-highlight">Frontend Engineer</span></h1>
                     <div className="hero__text ">
+                         <p className="lead-text"> Specialising in WCAG 2.2 AA accessibility engineering and component-based UI architecture, 
+                        with a growing focus on React and Next.js.</p>
                         <p className="lead-text">I architect accessible, scalable frontend systems built to last — then I make them better. 
                         Performance, maintainability, and continuous improvement aren&apos;t afterthoughts. They&apos;re the foundation.</p>
-                        <p className="lead-text"> Specialising in WCAG 2.2 AA accessibility engineering and component-based UI architecture, 
-                        with a growing focus on React and Next.js.</p>
                     </div>
                     <div className="hero__cta">
-                        <Link href="/work" className="pill pill--primary pill--large">
+                        <Link href="#featured-projects" className="pill pill--primary pill--large">
                             See what I build <ArrowRightIcon size={18} weight="regular" />
                         </Link>
-                        <Link href="/about" className="pill pill--secondary pill--large">
+                        <Link href="#about-preview" className="pill pill--secondary pill--large">
                             About me <ArrowRightIcon size={18} weight="regular" />
                         </Link>
                     </div>

@@ -41,9 +41,9 @@ export default function ProjectCard({ title, summary, tags, href, slug, featured
         <p className="project-card__text ">{summary}</p>
 
         <div className="project-card__links">
-          <Link href={`/work/${slug}`} className="project-card__link pill pill--primary">
+          {/* <Link href={`/work/${slug}`} className="project-card__link pill pill--primary">
             View project <ArrowRightIcon size={18} weight="regular" />
-          </Link>
+          </Link> */}
           {isExternal && (
             <a href={href} className="project-card__link pill pill--secondary" target="_blank" rel="noreferrer">
               Live site <ArrowUpRightIcon size={18} weight="regular" />
