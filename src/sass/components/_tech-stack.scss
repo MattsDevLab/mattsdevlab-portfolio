@@ -9,6 +9,10 @@ $icon-color: #B0FF96;
 
 .tech-stack {
     background-color: a.$background-color;
+    background:
+  radial-gradient(circle at top left, rgba(76, 255, 145, 0.08), transparent 35%),
+  radial-gradient(circle at bottom right, rgba(0, 255, 180, 0.05), transparent 40%),
+  #08110f;
 
     &__header {
         margin-bottom: 2rem;
