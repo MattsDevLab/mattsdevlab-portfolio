@@ -34,12 +34,12 @@ export default function AboutPreview(){
                 <div className="about-preview__rh-col">
                     <div className="about-preview__text">
                         <p className="lead-text">
-                            I&apos;m Matt — a senior frontend engineer who can&apos;t leave a system 
+                            I&apos;m Matt, a senior frontend engineer who can&apos;t leave a system 
                             alone until it&apos;s faster, cleaner, and more accessible than I found it.
                         </p>
                         <p className="para-text">
                             My relationship with technology started long before I wrote a line of code. 
-                            As a kid in Cape Town, I saved up birthday money to buy my first computer — 
+                            As a kid in Cape Town, I saved up birthday money to buy my first computer
                             then immediately pulled it apart to understand how it worked. That curiosity 
                             has stayed with me ever since.
                         </p>

@@ -15,10 +15,9 @@ export default function Hero(){
                     </p>
                     <h1 className="hero__title">Senior <span className="text-highlight">Frontend Engineer</span></h1>
                     <div className="hero__text ">
-                         <p className="lead-text"> Specialising in WCAG 2.2 AA accessibility engineering and component-based UI architecture, 
-                        with a growing focus on React and Next.js.</p>
-                        <p className="lead-text">I architect accessible, scalable frontend systems built to last — then I make them better. 
-                        Performance, maintainability, and continuous improvement aren&apos;t afterthoughts. They&apos;re the foundation.</p>
+                        <p className="lead-text">I architect accessible, scalable frontend systems built to last then I make them better.</p>
+                        <p className="lead-text">Specialising in WCAG 2.2 AA accessibility engineering, component-based UI architecture, and modern frontend development.</p>
+                        
                     </div>
                     <div className="hero__cta">
                         <Link href="#featured-projects" className="pill pill--primary pill--large">

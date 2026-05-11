@@ -14,9 +14,9 @@ export default function FeaturedProjects() {
         <div className="header">
           <div className="header__lh-col">
             <p className="sub-text">// Selected Work</p>
-            <h2 className="section-title"><span className="text-highlight">Accessibility-focused</span> Projects</h2>
+            <h2 className="section-title"><span className="text-highlight">Accessibility-first</span> Engineering</h2>
             <p className="lead-text">
-              A selection of projects demonstrating accessibility-first development, performance optimisation, and scalable frontend architecture.
+              A selection of projects demonstrating accessibility-first engineering, scalable component systems, and modern frontend architecture.
             </p>
           </div>
           <div className="header__rh-col">

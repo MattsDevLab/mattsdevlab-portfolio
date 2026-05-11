@@ -19,11 +19,11 @@ export default function PhilosophyPreview() {
                     </h2>
                     <p className="lead-text">
                         I don&apos;t approach frontend development as decoration. Every system 
-                        I build is engineered to last — accessible by default, scalable by 
+                        I build is engineered to last, accessible by default, scalable by 
                         design, and maintainable by anyone who inherits it.
                     </p>
                     <p className="philosophy__body">
-                        I specialise in finding the hidden order inside complex problems — 
+                        I specialise in finding the hidden order inside complex problems
                         then building the architecture that makes that order permanent.
                     </p>
                     <ul className="philosophy__pillars" aria-label="Engineering philosophy pillars">
