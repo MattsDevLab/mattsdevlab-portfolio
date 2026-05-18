@@ -7,12 +7,12 @@ export default function NavPulse() {
   const pathname = usePathname();
 
   useEffect(() => {
-    const nav = document.querySelector('.site-header');
+    const nav = document.querySelector<HTMLElement>('.site-header');
     if (!nav) return;
 
     const triggerPulse = () => {
       nav.classList.remove('pulse-active');
-      void nav.offsetWidth;
+      void (nav as HTMLElement).offsetWidth; 
       nav.classList.add('pulse-active');
     };
 
